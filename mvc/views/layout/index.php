@@ -7,7 +7,7 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ogani | Template</title>
+    <title>Adela Cosmetic</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
@@ -34,15 +34,15 @@
                 <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                 <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
             </ul>
-            <div class="header__cart__price">item: <span>$150.00</span></div>
+           
         </div>
         <div class="humberger__menu__widget">
             <div class="header__top__right__language">
                 <img src="<?php echo URL_LAYOUT; ?>img/language.png" alt="">
-                <div>English</div>
+                <div>Vietnam</div>
                 <span class="arrow_carrot-down"></span>
                 <ul>
-                    <li><a href="#">Spanis</a></li>
+                    <li><a href="#">Vietnam</a></li>
                     <li><a href="#">English</a></li>
                 </ul>
             </div>
@@ -117,12 +117,9 @@
                     <div class="hero__search">
                         <div class="hero__search__form">
                             <form action="#">
-                                <div class="hero__search__categories">
-                                    All Categories
-                                    <span class="arrow_carrot-down"></span>
-                                </div>
-                                <input type="text" placeholder="What do yo u need?">
-                                <button type="submit" class="site-btn">SEARCH</button>
+                                
+                                <input type="text" placeholder="Tìm sản phẩm...">
+                                <button type="submit" class="site-btn"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
                         <div class="hero__search__phone">
