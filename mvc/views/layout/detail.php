@@ -230,7 +230,7 @@
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
-                                    aria-selected="true">Description</a>
+                                    aria-selected="true">Mô tả</a>
                             </li>
                            
                             <li class="nav-item">
@@ -241,7 +241,7 @@
                         <div class="tab-content">
                             <div class="tab-pane active" id="tabs-1" role="tabpanel">
                                 <div class="product__details__tab__desc">
-                                    <h6>Products Infomation</h6>
+                                    <h6>Thông tin sản phẩm</h6>
                                     <p><?php echo $data['product']['des']; ?></p>
                                 </div>
                             </div>

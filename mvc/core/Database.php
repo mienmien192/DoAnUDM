@@ -3,7 +3,7 @@
 		const HOST='localhost';
 		const USERNAME='root';
 		const PASSWORD='';
-		const DB_NAME='quanlihoadon';
+		const DB_NAME='quanlisanpham';
 		private $connect;
 		public function connect()
 			{

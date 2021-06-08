@@ -23,13 +23,13 @@
                             <div>English</div>
                             <span class="arrow_carrot-down"></span>
                             <ul>
-                                <li><a href="#">Spanis</a></li>
+                                <li><a href="#">Vie</a></li>
                                 <li><a href="#">English</a></li>
                             </ul>
                         </div>
                         <div class="header__top__right__auth" id="login1">
                             <a href="<?php echo URL.'login' ?>" id="login2"><i class="fa fa-user"></i>
-                            <a href="<?php echo URL.'register'?>" id="register">Register</a>    
+                           
                                 <?php 
                                 if (isset($_SESSION['username'])){
                                     echo $_SESSION['username'];
@@ -39,6 +39,7 @@
                                 }
                                 ?>
                             </a>
+                             <!-- <a href="<?php echo URL.'register'?>" id="register">Register</a>     -->
                         </div>
                     </div>
                 </div>

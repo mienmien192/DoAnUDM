@@ -75,8 +75,8 @@
         </div>
         <div class="humberger__menu__contact">
             <ul>
-                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                <li>Miễn phí ship với đơn hàng trên 500.000</li>
+                <li><i class="fa fa-envelope"></i> adelacosmetic@gmail.com</li>
+                <li>Miễn phí ship với đơn hàng trên 300.000</li>
             </ul>
         </div>
     </div>
@@ -130,17 +130,17 @@
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="hero__search__phone__text">
-                                <h5>+65 11.188.888</h5>
+                                <h5>+84 123 123 123</h5>
                                 <span>support 24/7 time</span>
                             </div>
                         </div>
                     </div>
-                    <div class="hero__item set-bg" data-setbg="<?php echo URL_LAYOUT; ?>img/hero/banner.jpg">
+                    <div class="hero__item set-bg" data-setbg="<?php echo URL_LAYOUT; ?>img/hero/banner2.jpg">
                         <div class="hero__text">
-                            <span>FRUIT FRESH</span>
-                            <h2>Vegetable <br />100% Organic</h2>
-                            <p>Free Pickup and Delivery Available</p>
-                            <a href="#" class="primary-btn">SHOP NOW</a>
+                            
+                            <h2 style="color: green">Săn mỹ phẩm <br />nhận ngay quà hay</h2>
+                            <h6>Khuyến mãi chỉ hôm nay.</h6><br>
+                            <a href="#" class="btn btn-warning">Đặt hàng ngay</a>
                         </div>
                     </div>
                 </div>
@@ -168,12 +168,12 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="banner__pic">
-                        <img src="<?php echo URL_LAYOUT; ?>img/banner/banner-1.jpg" alt="">
+                        <img src="<?php echo URL_LAYOUT; ?>img/hero/banner3.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="banner__pic">
-                        <img src="<?php echo URL_LAYOUT; ?>img/banner/banner-2.jpg" alt="">
+                        <img src="<?php echo URL_LAYOUT; ?>img/hero/banner4.jpg" alt="">
                     </div>
                 </div>
             </div>

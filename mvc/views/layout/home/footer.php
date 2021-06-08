@@ -7,37 +7,26 @@
                             <a href="./index.html"><img src="<?php echo URL_LAYOUT; ?>img/logo.png" alt=""></a>
                         </div>
                         <ul>
-                            <li>Address: 60-49 Road 11378 New York</li>
-                            <li>Phone: +65 11.188.888</li>
-                            <li>Email: hello@colorlib.com</li>
+                            <li>Address: 164 Nguyen Thi Minh Khai, 1st District, Ho Chi Minh City</li>
+                            <li>Phone: 123 123 123</li>
+                            <li>Email: adelacosmetic@gmail.com</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
                     <div class="footer__widget">
-                        <h6>Useful Links</h6>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">About Our Shop</a></li>
-                            <li><a href="#">Secure Shopping</a></li>
-                            <li><a href="#">Delivery infomation</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Our Sitemap</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">Who We Are</a></li>
-                            <li><a href="#">Our Services</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Innovation</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                        </ul>
+                        <h6>Về Chúng tôi</h6>
+                        <p>Adela Cosmetic tự hào là một trong những chuỗi cửa hàng mỹ phẩm lớn và đáng tin cậy nhất tại Sài Gòn,
+                         nơi có thể thỏa mãn niềm đam mê trong cuộc chơi phấn son của hàng triệu tín đồ yêu shopping từ Nam ra Bắc.
+                          Được ưu ái với tên gọi “Thiên Đường Mỹ Phẩm Triệu Like”, Adela luôn được xem là mái nhà chung của hàng nghìn
+                           mặt hàng mỹ phẩm thuộc rất nhiều thương hiệu lớn nhỏ, hội tụ từ khắp các quốc gia trên thế giới.
+                         Adela luôn sẵn sàng đáp ứng mọi nhu cầu làm đẹp cho phái đẹp lẫn phái mạnh mà không cần phải lo về giá và chất lượng sản phẩm.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <div class="footer__widget">
-                        <h6>Join Our Newsletter Now</h6>
-                        <p>Get E-mail updates about our latest shop and special offers.</p>
+                        <h6>Contact Us</h6>
+                        <p>Liên hệ với chúng tôi bằng Email.</p>
                         <form action="#">
                             <input type="text" placeholder="Enter your mail">
                             <button type="submit" class="site-btn">Subscribe</button>
@@ -55,7 +44,7 @@
                 <div class="col-lg-12">
                     <div class="footer__copyright">
                         <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Adela Cosmetic. This template is made by AdelaTeam.
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
                         <div class="footer__copyright__payment"><img src="<?php echo URL_LAYOUT; ?>img/payment-item.png" alt=""></div>
                     </div>
