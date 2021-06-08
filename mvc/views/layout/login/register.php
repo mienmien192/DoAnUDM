@@ -47,13 +47,14 @@
 									<input name="email" type="text" class="form-control form-control-lg" placeholder="Email">
 								</div>
 								<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-									<label>Mật Khẩu:</label><br>
-									<input name="password" type="password" class="form-control form-control-lg" placeholder="Mật khẩu">
+									<label>Điện thoại:</label><br>
+									<input name="phone" type="text" class="form-control form-control-lg" placeholder="Số điện thoại">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-
+									<label>Mật Khẩu:</label><br>
+									<input name="password" type="password" class="form-control form-control-lg" placeholder="Mật khẩu">
 								</div>
 							</div>
 							<button name="register" class="btn_login mb-2 mt-3" type="submit" value="Đăng ký">Đăng ký</button>

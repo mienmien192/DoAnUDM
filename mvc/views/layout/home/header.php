@@ -6,7 +6,7 @@
                     <div class="header__top__left">
                         <ul>
                             <li><i class="fa fa-envelope"></i> adelacomestic@gmail.com</li>
-                            <li>Free Shipping for all Order of $99</li>
+                            <li>Miễn phí ship cho hóa đơn trên 300.000 VND</li>
                         </ul>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
                         </div>
                         <div class="header__top__right__auth" id="login1">
                             <a href="<?php echo URL.'login' ?>" id="login2"><i class="fa fa-user"></i>
-                                
+                            <a href="<?php echo URL.'register'?>" id="register">Register</a>    
                                 <?php 
                                 if (isset($_SESSION['username'])){
                                     echo $_SESSION['username'];
