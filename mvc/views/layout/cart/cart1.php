@@ -335,7 +335,7 @@
                 <div class="col-lg-12">
                     <div class="shoping__cart__btns">
                         <a href="<?php echo URL; ?>" class="primary-btn cart-btn">CONTINUE SHOPPING</a>
-                        <a href="http://localhost:8080/codePHP/DOAN/cart1/update/" class="primary-btn cart-btn cart-btn-right"><span class="icon_loading"></span>
+                        <a href="http://localhost:8080/codePHP/DOANUDM/cart1/update/" class="primary-btn cart-btn cart-btn-right"><span class="icon_loading"></span>
                             Update Cart</a>
                     </div>
                 </div>
@@ -456,8 +456,8 @@
                 data:{},
                 success:function(){
                     $(name).empy();
-                    $("#total_Cart").load("http://localhost:8080/codePHP/DOAN/cart1/index #total_Cart");
-                    $("num_cart").load("http://localhost:8080/codePHP/DOAN #num_cart");
+                    $("#total_Cart").load("http://localhost:8080/codePHP/DOANUDM/cart1/index #total_Cart");
+                    $("num_cart").load("http://localhost:8080/codePHP/DOANUDM #num_cart");
                 }
             });
         });
@@ -479,15 +479,15 @@
             var totalName="#total"+id;
             var totalCart="#total_Cart"+id;
 
-            // var href="http://localhost:8080/codePHP/DOAN/cart1/update/"+id;
+            // var href="http://localhost:8080/codePHP/DOANUDM/cart1/update/"+id;
             $.ajax({
                  url:href,
                 type:'POST',
                 data:{value:value},
                 success:function(res){
-                    $(proQtyName).load("http://localhost:8080/codePHP/DOAN/cart1/index " + inputName);
-                    $(totalName).load("http://localhost:8080/codePHP/DOAN/cart1/index "+ totalName);
-                    $(totalCart).load("http://localhost:8080/codePHP/DOAN/cart1/index "+ totalCart);
+                    $(proQtyName).load("http://localhost:8080/codePHP/DOANUDM/cart1/index " + inputName);
+                    $(totalName).load("http://localhost:8080/codePHP/DOANUDM/cart1/index "+ totalName);
+                    $(totalCart).load("http://localhost:8080/codePHP/DOANUDM/cart1/index "+ totalCart);
                 }
             });
         });
@@ -499,15 +499,15 @@
                 var value = $(inputName).val();
                 var totalName="#total"+id;
                 var totalCart="#total_Cart"+id;
-                var href="http://localhost:8080/codePHP/DOAN/cart1/update/"+id;
+                var href="http://localhost:8080/codePHP/DOANUDM/cart1/update/"+id;
                     $.ajax({
                         url:href,
                         type:'POST',
                         data:{value:value},
                         success:function(res){
                            
-                            $(totalName).load("http://localhost:8080/codePHP/DOAN/cart1/index "+ totalName);
-                            $(totalCart).load("http://localhost:8080/codePHP/DOAN/cart1/index "+ totalCart);
+                            $(totalName).load("http://localhost:8080/codePHP/DOANUDM/cart1/index "+ totalName);
+                            $(totalCart).load("http://localhost:8080/codePHP/DOANUDM/cart1/index "+ totalCart);
                       
                 }
         });
