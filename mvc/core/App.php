@@ -30,7 +30,6 @@
 			if(isset($url))
 			{
 				$this->params=$url ? array_values($url):[];
-				// tra ve string
 			}
 			call_user_func_array([$this->controllers, $this->actions], $this->params);
 		}

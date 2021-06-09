@@ -39,7 +39,6 @@
                                 }
                                 ?>
                             </a>
-                             <!-- <a href="<?php echo URL.'register'?>" id="register">Register</a>     -->
                         </div>
                     </div>
                 </div>
@@ -50,7 +49,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="header__logo">
-                    <a href="./index.html"><img src="<?php echo URL_LAYOUT; ?>img/logo1.png" alt=""></a>
+                    <a href="./index.html"><img src="<?php echo URL_LAYOUT; ?>img/logo3.png" alt=""></a>
                 </div>
             </div>
             <div class="col-lg-6">

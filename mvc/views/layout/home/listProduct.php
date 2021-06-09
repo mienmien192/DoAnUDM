@@ -8,10 +8,12 @@
                     <div class="featured__controls">
                         <ul>
                             <li class="active" data-filter="*">All</li>
-                            <li data-filter=".oranges">Oranges</li>
-                            <li data-filter=".fresh-meat">Fresh Meat</li>
-                            <li data-filter=".vegetables">Vegetables</li>
-                            <li data-filter=".fastfood">Fastfood</li>
+                            <li data-filter="">Phấn má</li>
+                            <li data-filter="">Son môi</li>
+                            <li data-filter="">Kem nền</li>
+                            <li data-filter="">Nước hoa</li>
+                            <li data-filter="">Mascara</li>
+                            <li data-filter="">Kẻ mắt</li>
                         </ul>
                     </div>
                 </div>
