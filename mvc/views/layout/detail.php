@@ -88,8 +88,8 @@
     ?> 
     <!-- Header Section End -->
 
+    
     <!-- Hero Section Begin -->
-        <!-- Hero Section Begin -->
         <section class="hero">
         <div class="container">
             <div class="row">
@@ -153,7 +153,7 @@
                         </div>
                         <div class="product__details__pic__slider owl-carousel">
                             <img data-imgbigurl="img/product/details/product-details-2.jpg"
-                                src="<?php echo URL_LAYOUT; ?>img/product/details/thumb-1.jpg" alt="">
+                                src="<?php echo URL_LAYOUT; ?>img/product/details/gucci.jpg" alt="">
                             <img data-imgbigurl="img/product/details/product-details-3.jpg"
                                 src="<?php echo URL_LAYOUT; ?>img/product/details/thumb-2.jpg" alt="">
                             <img data-imgbigurl="img/product/details/product-details-5.jpg"
