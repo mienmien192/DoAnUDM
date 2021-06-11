@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="blog__item">
+                    <div class="blog__item"> 
                         <div class="blog__item__pic">
                             <img src="<?php echo URL_LAYOUT; ?>img/blog/blog-3.jpg" alt="">
                         </div>
