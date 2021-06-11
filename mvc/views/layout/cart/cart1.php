@@ -508,14 +508,13 @@
                            
                             $(totalName).load("http://localhost:8080/codePHP/DOANUDM/cart1/index "+ totalName);
                             $(totalCart).load("http://localhost:8080/codePHP/DOANUDM/cart1/index "+ totalCart);
-                      
                 }
         });
     });
     </script>
 </html>
 <?php
-$num = 1000000;
+$num = 1;
 $formattedNum = number_format($num);
 echo $formattedNum;
 ?>

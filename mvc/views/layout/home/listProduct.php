@@ -3,7 +3,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Featured Product</h2>
+                        <h2>Các sản phẩm nổi bật</h2>
+                       
                     </div>
                     <div class="featured__controls">
                         <ul>
@@ -39,6 +40,17 @@
                     </div>
                 </div>
                  <?php } ?>
+                 <!-- <?php 
+                  $seenProduct_data[] = $data['cookies'];
+                  $cookie_data = json_encode($seenProduct_data);
+                  
+                  if (isset($_COOKIE["Seen_product"])) {
+                      echo $_COOKIE["Seen_product"];
+                  } else {
+                      setcookie('Seen_product', $cookie_data, time() + (86400 * 30));
+                  } 
+            
+                  ?> -->
             </div>
         </div>
     </section>

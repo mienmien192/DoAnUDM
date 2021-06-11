@@ -11,6 +11,7 @@
  		$data['main']='product/main';
  		$data['product']=$this->productModel->getAll();
  		$this->call_views('admin/index',$data);
+		 
  	}
  	function store(){
  		if(isset($_POST['addProduct'])){

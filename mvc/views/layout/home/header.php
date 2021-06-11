@@ -18,15 +18,7 @@
                             <a href="#"><i class="fa fa-linkedin"></i></a>
                             <a href="<?php echo URL.'login/logout' ?>" class="logout"><i class="fa fa-pinterest-p"></i></a>
                         </div>
-                        <div class="header__top__right__language">
-                            <img src="<?php echo URL_LAYOUT; ?>img/language.png" alt="">
-                            <div>Vietnam</div>
-                            <span class="arrow_carrot-down"></span>
-                            <ul>
-                                <li><a href="#">Vie</a></li>
-                                <li><a href="#">English</a></li>
-                            </ul>
-                        </div>
+                       
                         <div class="header__top__right__auth" id="login1">
                             <a href="<?php echo URL.'login' ?>" id="login2"><i class="fa fa-user"></i>
                            

@@ -17,11 +17,36 @@
   <link rel="stylesheet" href="<?php echo URL_ADMIN; ?>dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <style>
+    .login-page{
+      background: url(../DOANUDM/public/layout/img/banner/banner5.jpg);
+      background-size:cover;
+
+    }
+    .login-box{
+      
+    }
+    .login-card-body{
+      background: rgba(255, 255, 255, .5);
+      border-radius: 10px;
+    }
+    .login-logo b{
+        font-weight: bold;
+        color: #000;
+        font-family: 'Sacramento', cursive; 
+        font-size: 40px;
+    }
+    .card{
+      background: none;
+    }
+  </style>
 </head>
 <body class="login-page">
 	<div class="login-box">
   <div class="login-logo">
-    <a href="../../index2.html"><b>Welcome Back!</b></a>
+    <a href="#"><b>Adela Cosmetic Xin chào</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
@@ -62,7 +87,7 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block" name="login">Sign In</button>
+            <button type="submit" class="btn btn-warning btn-block" name="login">Sign In</button>
           </div>
           <!-- /.col -->
         </div>
@@ -72,10 +97,10 @@
       <!-- /.social-auth-links -->
 
       <p class="mb-1">
-        <a href="forgot-password.html">Quên mật khẩu? </a>
+        <a href="forgot-password.html" style="color: #000"  >Quên mật khẩu? </a>
       </p>
       <p class="mb-0">
-        <a href="register" class="text-center">Chưa có tài khoản? Đăng ký ngay</a>
+        <a href="register" style="color: #000" class="text-center">Chưa có tài khoản? Đăng ký ngay</a>
       </p>
     </div>
     <!-- /.login-card-body -->
