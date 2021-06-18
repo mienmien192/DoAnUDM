@@ -20,6 +20,8 @@
 			$this->call_views('layout/detail',$data);
 		}
 		function shopGrid(){
+			$data['main']='home/listProduct';
+			$data['product']=$this->productModel->getAll();
 			$this->call_views('layout/shopgrid',$data);
 		}
 		function contactUs(){
