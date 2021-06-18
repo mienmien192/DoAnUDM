@@ -40,19 +40,6 @@
                     </div>
                 </div>
                  <?php } ?>
-
-
-                 <!-- <?php 
-                  $seenProduct_data[] = $data['cookies'];
-                  $cookie_data = json_encode($seenProduct_data);
-                  
-                  if (isset($_COOKIE["Seen_product"])) {
-                      echo $_COOKIE["Seen_product"];
-                  } else {
-                      setcookie('Seen_product', $cookie_data, time() + (86400 * 30));
-                  } 
-            
-                  ?> -->
             </div>
         </div>
     </section>

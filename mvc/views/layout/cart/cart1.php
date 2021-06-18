@@ -1,4 +1,20 @@
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -154,7 +170,7 @@
             <div class="col-lg-6">
                 <nav class="header__menu">
                     <ul>
-                        <li class="active"><a href="./index.html">Home</a></li>
+                        <li class="active"><a href="">Home</a></li>
                         <li><a href="./shop-grid.html">Shop</a></li>
                         <li><a href="#">Pages</a>
                             <ul class="header__menu__dropdown">
@@ -300,19 +316,17 @@
                                     <td class="shoping__cart__price">
                                         <?php echo $value['gia']; ?>
                                     </td>
-                                    <td>
-                                        <input type="text" value="<?php echo $value['count']; ?>" id="<?php echo 'input'.$value['id']; ?>">
-                                    </td>
+                                   
                                     <td class="shoping__cart__quantity">
                                         <div class="quantity">
-                                            <div class="pro-qty">
-
-                                              <div class="cho" id="<?php echo 'qtyPro'.$value['id']; ?>"data-id="<?php echo $value['id']; ?>" >
-                                                    <input type="text" value="<?php echo $value['count']; ?>" id="<?php echo 'input'.$value['id']; ?>">
+                                            
+                                              <div>
+                                              <td>
+                                                <input style="width:50px;" type="text" value="<?php echo $value['count']; ?>" id="<?php echo 'input'.$value['id']; ?>">
+                                            </td>
                                               </div>
 
 
-                                            </div>
                                         </div>
                                     </td>
                                  <td class="shoping__cart__total" id="<?php echo "subTotal".$value['id'] ?>">
@@ -328,7 +342,7 @@
                                         <a href="" class="addProduct" data-id="<?php echo $value['id']; ?>">Update</a>
                                     </td>
                                 </tr>
-                                <?php  }}  ?>
+                                    <?php  }}  ?>
                             </tbody>
                         </table>
                     </div>
@@ -459,8 +473,8 @@
                 data:{},
                 success:function(){
                     $(name).empy();
-                    $("#total_Cart").load("http://localhost:8080/codePHP/DOANUDM/cart1/index #total_Cart");
-                    $("num_cart").load("http://localhost:8080/codePHP/DOANUDM #num_cart");
+                    $("#total_Cart").load("http:http://localhost:8080/codePHP/DOANUDM/cart1/index #total_Cart");
+                    $("num_cart").load("http:http://localhost:8080/codePHP/DOANUDM #num_cart");
                 }
             });
         });
@@ -482,7 +496,7 @@
             var totalName="#total"+id;
             var totalCart="#total_Cart"+id;
 
-            // var href="http://localhost:8080/codePHP/DOANUDM/cart1/update/"+id;
+            
             $.ajax({
                  url:href,
                 type:'POST',

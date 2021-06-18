@@ -59,7 +59,7 @@
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
-                <li class="active"><a href="./index.html">Home</a></li>
+                <li class="active"><a href="">Home</a></li>
                 <li><a href="./shop-grid.html">Shop</a></li>
                 <li><a href="#">Pages</a>
                     <ul class="header__menu__dropdown">
@@ -82,8 +82,8 @@
         </div>
         <div class="humberger__menu__contact">
             <ul>
-                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                <li>Free Shipping for all Order of $99</li>
+                <li><i class="fa fa-envelope"></i> adelacosmetic@gmail.com</li>
+                <li>Miễn phí ship cho hóa đơn trên 300.000 VND</li>
             </ul>
         </div>
     </div>
@@ -256,7 +256,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="<?php echo URL_LAYOUT; ?>img/product/product-1.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="<?php echo URL_LAYOUT; ?>img/product/becca.jpg">
                             <ul class="product__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -264,14 +264,14 @@
                             </ul>
                         </div>
                         <div class="product__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
+                            <h6><a href="#">Phấn mắt Becca</a></h6>
+                            <h5>250.000 VND</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="<?php echo URL_LAYOUT; ?>img/product/product-2.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="<?php echo URL_LAYOUT; ?>img/product/centella.jpg">
                             <ul class="product__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -279,14 +279,14 @@
                             </ul>
                         </div>
                         <div class="product__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
+                            <h6><a href="#">Nước Hoa Hồng rau má Madagascar Centella Asiatica Toning Toner 210ml</a></h6>
+                            <h5>284.000 VND</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="<?php echo URL_LAYOUT; ?>img/product/product-3.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="<?php echo URL_LAYOUT; ?>img/product/mascaralilybyred.jpg">
                             <ul class="product__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -294,14 +294,14 @@
                             </ul>
                         </div>
                         <div class="product__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
+                            <h6><a href="#">Mascara Siêu Mảnh, Dài và Chống Trôi Lilybyred am9 to pm9 Survival Colorcara 6g</a></h6>
+                            <h5>149.000 VND</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="<?php echo URL_LAYOUT; ?>img/product/product-7.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="<?php echo URL_LAYOUT; ?>img/product/tonymoly.jpg">
                             <ul class="product__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -309,8 +309,8 @@
                             </ul>
                         </div>
                         <div class="product__item__text">
-                            <h6><a href="#">Crab Pool Security</a></h6>
-                            <h5>$30.00</h5>
+                            <h6><a href="#">Gel Kẻ Mắt TonyMoly Black Gel Eyeliner 4gr</a></h6>
+                            <h5>130.000 VND</h5>
                         </div>
                     </div>
                 </div>
