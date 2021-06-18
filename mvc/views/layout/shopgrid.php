@@ -33,7 +33,7 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
-            <a href="#"><img src="<?php echo URL_LAYOUT;?>img/logo4.png" alt=""></a>
+            <a href="#"><img src="<?php echo URL_LAYOUT; ?>img/logo3.png" alt=""></a></a>
         </div>
         <div class="humberger__menu__cart">
             <ul>
@@ -130,7 +130,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="<?php echo URL_LAYOUT;?>img/logo.png" alt=""></a>
+                        <a href="./index.html"><img src="<?php echo URL_LAYOUT;?>img/logo3.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
