@@ -19,5 +19,8 @@
 			$data['product']=$this->productModel->findById($id);
 			$this->call_views('layout/detail',$data);
 		}
+		function shopGrid(){
+			$this->call_views('layout/shopgrid',$data);
+		}
 	}
  ?>
