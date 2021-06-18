@@ -58,7 +58,7 @@
                             </ul>
                         </li>
                         <li><a href="./blog.html">Beauty Tips</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="<?php echo URL.'layout/contactUs'?>">Contact</a></li>
                     </ul>
                 </nav>
             </div>

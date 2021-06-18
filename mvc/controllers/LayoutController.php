@@ -22,5 +22,8 @@
 		function shopGrid(){
 			$this->call_views('layout/shopgrid',$data);
 		}
+		function contactUs(){
+			$this->call_views('layout/contactUs',$data);
+		}
 	}
  ?>
