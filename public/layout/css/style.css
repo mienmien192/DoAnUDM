@@ -1,7 +1,8 @@
 html,
 body {
     height: 100%;
-    font-family: "Cairo", sans-serif;
+    /* font-family: "Cairo", sans-serif; */
+    font-family: 'Baloo Tammudu 2', cursive;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
 }
@@ -15,7 +16,7 @@ h6 {
     margin: 0;
     color: #111111;
     font-weight: 400;
-    font-family: "Cairo", sans-serif;
+    font-family: 'Baloo Tammudu 2', cursive;
 }
 
 h1 {
@@ -44,7 +45,7 @@ h6 {
 
 p {
     font-size: 16px;
-    font-family: "Cairo", sans-serif;
+    font-family: 'Baloo Tammudu 2', cursive;
     color: #6f6f6f;
     font-weight: 400;
     line-height: 26px;
@@ -583,7 +584,7 @@ ol {
     right: 18px;
     top: 9px;
     content: "3";
-    font-family: "ElegantIcons";
+    font-family: 'Baloo Tammudu 2', cursive;
     font-size: 18px;
     color: #ffffff;
 }

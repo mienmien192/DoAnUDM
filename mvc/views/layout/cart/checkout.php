@@ -12,7 +12,7 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
     <!-- Css Styles -->
     <link rel="stylesheet" href="<?php echo URL_LAYOUT;?>css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="<?php echo URL_LAYOUT;?>css/font-awesome.min.css" type="text/css">
@@ -28,6 +28,11 @@
         input{
             color: #000 !important;
         }
+        
+    body{
+        font-family: 'Baloo Tammudu 2', cursive;
+    }
+    
     </style>
 </head>
 
@@ -149,7 +154,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="header__logo">
-                    <a href="./index.html"><img src="<?php echo URL_LAYOUT; ?>img/logo2.png" alt=""></a>
+                <a href="./index.html"><img src="<?php echo URL_LAYOUT; ?>img/logo3.png" alt=""></a>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -229,12 +234,9 @@
                     <div class="hero__search">
                         <div class="hero__search__form">
                             <form action="#">
-                                <div class="hero__search__categories">
-                                    All Categories
-                                    <span class="arrow_carrot-down"></span>
-                                </div>
-                                <input type="text" placeholder="What do yo u need?">
-                                <button type="submit" class="site-btn">SEARCH</button>
+                               
+                            <input type="text" placeholder="Tìm sản phẩm...">
+                                <button type="submit" class="site-btn"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
                         <div class="hero__search__phone">
@@ -336,13 +338,13 @@
                                 <?php } ?>
                             </ul>
                             <div class="checkout__order__subtotal">Ship <span><?php 
-                            $num = 15000;
+                            $num = 25000;
                             $formattedNum = number_format($num);
                             echo $formattedNum;
                             ?></span></div>
                             <div class="checkout__order__total">Total <span>
                                 <?php 
-                                $tong=15000;
+                                $tong=25000;
                                 foreach ($data['cart'] as $value) {
                                  $tong += $value['count']*$value['gia'];
                                  $formattedNum = number_format($tong);
@@ -432,13 +434,14 @@
       $('button.datHang').click(function(event)
       {
         var emailCustom=$('input#emailCustom').val();
+        var valu = "<?php echo $tensp ?>";
         alert(emailCustom);
         Email.send({
-           SecureToken: "73d5d701-f7ae-466d-a232-03c78b67a91b",
+           SecureToken: "05527685-4711-43ab-b78c-df89be4e44f2",
             To : emailCustom,
-            From : "webOrgani1.vlog@gmail.com",
+            From : "adelacosmetic.vlog@gmail.com",
             Subject : "Xác nhận đơn hàng",
-            Body : "Chúc mừng bạn đã đặt hàng thành công!"
+            Body : "Chúc mừng bạn đã đặt"+ valu + " thành công hehe!"
         }).then(
         message => alert("Đặt hàng thành công!")
         );

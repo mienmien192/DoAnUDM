@@ -4,7 +4,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.html"><img src="<?php echo URL_LAYOUT; ?>img/logo.png" alt=""></a>
+                            <a href="./index.html"><img src="<?php echo URL_LAYOUT; ?>img/logo4.png" alt=""></a>
                         </div>
                         <ul>
                             <li>Address: 164 Nguyen Thi Minh Khai, 1st District, Ho Chi Minh City</li>
@@ -30,7 +30,11 @@
                         <form action="#">
                             <input type="text" placeholder="Enter your mail">
                             <button type="submit" class="site-btn">Subscribe</button>
+                            <br>
+                            
                         </form>
+                        <input type="text" placeholder="Enter your complaint" style="width: 100%; height: 150px;">
+                        <br> <br>
                         <div class="footer__widget__social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-instagram"></i></a>

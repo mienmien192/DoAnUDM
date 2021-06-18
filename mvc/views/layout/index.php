@@ -7,8 +7,16 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+    
     <title>Adela Cosmetic</title>
 
+    <style>
+    html, body{
+        font-family: 'Baloo Tammudu 2', cursive;
+    }
+    </style>
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
 
@@ -27,7 +35,7 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
-            <a href="#"><img src="<?php echo URL_LAYOUT; ?>img/logo.png" alt=""></a>
+            <a href="#"><img src="<?php echo URL_LAYOUT; ?>img/logo3.png" alt=""></a>
         </div>
         <div class="humberger__menu__cart">
             <ul>
@@ -45,7 +53,7 @@
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
                 <li class="active"><a href="./index.html">Home</a></li>
-                <li><a href="./shop-grid.html">Shop</a></li>
+                <li><a href="<?php echo URL.'layout/shop-grid'?>">Shop</a></li>
                 <li><a href="#">Pages</a>
                     <ul class="header__menu__dropdown">
                         <li><a href="./shop-details.html">Shop Details</a></li>
@@ -81,7 +89,7 @@
     <!-- Header Section End -->
 
     <!-- Hero Section Begin -->
-    <section class="hero">
+    <section class="hero" style="font-family: 'Baloo Tammudu 2', cursive;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
@@ -108,12 +116,13 @@
                 <div class="col-lg-9">
                     <div class="hero__search">
                         <div class="hero__search__form">
-                            <form action="#">
+                            <form action="search.php" method="POST">
                                 
-                                <input type="text" placeholder="Tìm sản phẩm...">
-                                <button type="submit" class="site-btn"><i class="fa fa-search"></i></button>
+                                <input type="text" placeholder="Tìm sản phẩm..." name="tensp">
+                                <button type="submit" class="site-btn" value="Search" name="search1"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
+                        
                         <div class="hero__search__phone">
                             <div class="hero__search__phone__icon">
                                 <i class="fa fa-phone"></i>
@@ -136,6 +145,7 @@
             </div>
         </div>
     </section>
+
     <!-- Hero Section End -->
 
     <!-- Categories Section Begin -->

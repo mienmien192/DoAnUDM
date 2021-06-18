@@ -8,8 +8,8 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ogani | Template</title>
-
+    <title>Adela Cosmetic - Cart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
 
@@ -22,6 +22,11 @@
     <link rel="stylesheet" href="<?php echo URL_LAYOUT;?>css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="<?php echo URL_LAYOUT;?>css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="<?php echo URL_LAYOUT;?>css/style.css" type="text/css">
+    <style>
+    body{
+        font-family: 'Baloo Tammudu 2', cursive;
+    }
+    </style>
 </head>
 
 <body>
@@ -35,14 +40,14 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
-            <a href="#"><img src="img/logo.png" alt=""></a>
+            <a href="#"><img src="img/logo3.png" alt=""></a>
         </div>
         <div class="humberger__menu__cart">
             <ul>
                 <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                 <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
             </ul>
-            <div class="header__cart__price">item: <span>$150.00</span></div>
+            
         </div>
         <div class="humberger__menu__widget">
             <div class="header__top__right__language">
@@ -60,7 +65,7 @@
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
-                <li class="active"><a href="./index.html">Home</a></li>
+                <li class="active"><a href="<?php echo URL; ?>">Home</a></li>
                 <li><a href="./shop-grid.html">Shop</a></li>
                 <li><a href="#">Pages</a>
                     <ul class="header__menu__dropdown">
@@ -143,7 +148,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="header__logo">
-                    <a href="./index.html"><img src="<?php echo URL_LAYOUT; ?>img/logo.png" alt=""></a>
+                <a href="./index.html"><img src="<?php echo URL_LAYOUT; ?>img/logo3.png" alt=""></a>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -165,7 +170,7 @@
                 </nav>
             </div>
             <div class="col-lg-3">
-                <!-- <div class="header__cart">
+                <div class="header__cart">
                     <ul>
                         <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                         <li><a href="<?php echo URL.'cart1/index' ?>"><i class="fa fa-shopping-bag"></i>
@@ -182,8 +187,8 @@
                          </span>
                      </a></li>
                  </ul>
-                 <div class="header__cart__price">item: <span>$150.00</span>
-                 </div> -->
+                 
+                 </div>
              </div>
          </div>
      </div>
@@ -219,16 +224,14 @@
                         </ul>
                     </div>
                 </div>
+    
                 <div class="col-lg-9">
                     <div class="hero__search">
                         <div class="hero__search__form">
-                            <form action="#">
-                                <div class="hero__search__categories">
-                                    All Categories
-                                    <span class="arrow_carrot-down"></span>
-                                </div>
-                                <input type="text" placeholder="What do yo u need?">
-                                <button type="submit" class="site-btn">SEARCH</button>
+                            <form action="#" method='POST'>
+                               
+                                <input type="text" placeholder="Tìm sản phẩm...">
+                                <button type="submit" value="Search" name="search" class="site-btn"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
                         <div class="hero__search__phone">
@@ -300,7 +303,7 @@
                                     <td>
                                         <input type="text" value="<?php echo $value['count']; ?>" id="<?php echo 'input'.$value['id']; ?>">
                                     </td>
-                                   <!--  <td class="shoping__cart__quantity">
+                                    <td class="shoping__cart__quantity">
                                         <div class="quantity">
                                             <div class="pro-qty">
 
@@ -311,7 +314,7 @@
 
                                             </div>
                                         </div>
-                                    </td> -->
+                                    </td>
                                  <td class="shoping__cart__total" id="<?php echo "subTotal".$value['id'] ?>">
                                        <span id="<?php echo "total".$value['id']; ?>">
                                            <?php echo $value['count']*$value['gia']; ?>

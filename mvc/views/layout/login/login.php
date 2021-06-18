@@ -95,9 +95,15 @@
 
       
       <!-- /.social-auth-links -->
-
+        <?php 
+        if (isset($_GET["newpwd"])) {
+          if ($_GET["newpwd"] == "passwordupdated") {
+            echo '<p > Your password has been </p>';
+          }
+        }
+        ?>
       <p class="mb-1">
-        <a href="forgot-password.html" style="color: #000"  >Quên mật khẩu? </a>
+        <a href="reset-password.php" style="color: #000"  >Quên mật khẩu? </a>
       </p>
       <p class="mb-0">
         <a href="register" style="color: #000" class="text-center">Chưa có tài khoản? Đăng ký ngay</a>

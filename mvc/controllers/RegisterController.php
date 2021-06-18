@@ -10,12 +10,12 @@ class Register extends Connect
 
 	function default()
 	{
-		Header("Location:http://localhost:8080/codePHP/DOAN/register");
+		Header("Location:http://localhost:8080/codePHP/DOANUDM/register");
 	}
 	function validator()
 	{
 		if (isset($_SESSION["adminEmail"])) {
-			Header("Locationhttp://localhost:8080/codePHP/DOAN/");
+			Header("Locationhttp://localhost:8080/codePHP/DOANUDM/");
 		} else if ($this->fail) {
 			$this->getView("Register", [
 				'display' => 'block',

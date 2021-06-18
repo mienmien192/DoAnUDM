@@ -19,11 +19,11 @@
                     </div>
                 </div>
             </div>
- <div class="row featured__filter">
+        <div class="row featured__filter">
             <?php 
             foreach ($data['product'] as $key => $value) {
              ?>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="<?php echo URL_LAYOUT .'img/product/'.$value['img'];?>">
                             <ul class="featured__item__pic__hover">
@@ -35,11 +35,13 @@
                         <div class="featured__item__text">
                             <h6><a href="#"><?php echo $value['tensp']; ?></a></h6>
                             <h6><a href="#"><?php echo $value['xuatxu']; ?></a></h6>
-                            <h5><?php echo '$'.number_format($value['gia']); ?></h5>
+                            <h5><?php echo number_format($value['gia']).'VND'; ?></h5>
                         </div>
                     </div>
                 </div>
                  <?php } ?>
+
+
                  <!-- <?php 
                   $seenProduct_data[] = $data['cookies'];
                   $cookie_data = json_encode($seenProduct_data);

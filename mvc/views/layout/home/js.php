@@ -17,20 +17,23 @@
     			data:{},
     			success:function(res){
     				swal("Thêm thành công", "Vui lòng tới giỏ hàng kiểm tra!", "success");
-                     $("#num_cart").load("http://localhost:8080/codePHP/DOAN/ #num_cart");
+                     $("#num_cart").load("http://localhost:8080/codePHP/DOANUDM/ #num_cart");
     			}
     		});
     	});
         $('a.logout').click(function(event)
         {
             event.preventDefault();
+            var makh=('#makh').val();
+            var tensp1=('#tensp1').val();
+            var tensp2=('#tensp2').val();
             var href=$(this).attr("href");
             $.ajax({
                 url:href,
                 type:'GET',
-                data:{},
+                data:{ho:ho,ten:ten,email:email},
                 success:function(){
-                    $("#login1").load("http://localhost:8080/codePHP/DOAN/ #login2");
+                    $("#login1").load("http://localhost:8080/codePHP/DOANUDM/ #login2");
                 }
             });
         });

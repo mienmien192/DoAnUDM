@@ -7,7 +7,9 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ogani | Template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+    
+    <title>Chi tiết sản phẩm</title>
 
     <!-- Google Font -->
     <link href="<?php echo URL_LAYOUT; ?>https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
@@ -15,6 +17,11 @@
      <?php
     require_once('home/css.php');
     ?> 
+    <style>
+    html, body{
+        font-family: 'Baloo Tammudu 2', cursive;
+    }
+    </style>
 </head>
 
 <body>
@@ -58,7 +65,7 @@
                     <ul class="header__menu__dropdown">
                         <li><a href="./shop-details.html">Shop Details</a></li>
                         <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                        <li><a href="./checkout.html">Check Out</a></li>
+                        <li><a href="">Check Out</a></li>
                         <li><a href="./blog-details.html">Blog Details</a></li>
                     </ul>
                 </li>
