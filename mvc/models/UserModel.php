@@ -24,5 +24,9 @@ class UserModel extends BaseModel
 			return $this->loginUser(self::TABLE,$username,$password);
 
 		}
+		public function register($data=[]){
+			return $this->registerUser(self::TABLE,$data);
+
+		}
 	}
  ?>

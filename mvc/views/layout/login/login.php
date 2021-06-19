@@ -25,9 +25,7 @@
       background-size:cover;
 
     }
-    .login-box{
-      
-    }
+    
     .login-card-body{
       background: rgba(255, 255, 255, .5);
       border-radius: 10px;
