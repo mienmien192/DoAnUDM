@@ -55,7 +55,7 @@
 							<div class="row">
 								<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 									<label>Email:</label><br>
-									<input name="email" type="email" class="form-control form-control-lg" placeholder="Email">
+									<input name="username" type="email" class="form-control form-control-lg" placeholder="Email">
 								</div>
 								<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 									<label>Điện thoại:</label><br>
@@ -71,10 +71,10 @@
                             <div class="row">
 								<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 									<label>Nhập lại mật Khẩu:</label><br>
-									<input name="cpassword" id="cpassword" type="password" class="form-control form-control-lg" placeholder="Mật khẩu">
+									<input name="cpassword" id="cpassword" type="password" class="form-control form-control-lg" placeholder="Xác nhận mật khẩu">
 								</div>
 							</div>
-							<button name="signUp" class="btn_login mb-2 mt-3" type="submit" value="Đăng ký">Đăng ký</button>
+							<button name="register" class="btn_login mb-2 mt-3" type="submit" value="Đăng ký">Đăng ký</button>
 						</form>
 						<div class="register_ex">
 							<p class="login_here mt-2">Bạn đã có tài khoản, hãy Đăng nhập <a href="<?php echo URL.'login'; ?>" style="color:#ef7147; text-decoration: none;">tại đây</a></p>
@@ -143,7 +143,7 @@
                        minlength: "Vui lòng nhập ít nhất 5 kí tự"
                    },
                    "cpassword": {
-                    required: "Vui lòng nhập password",
+                    required: "Vui lòng nhập password ",
                        equalTo: "Mật khẩu không trùng",
                    }
                }

@@ -1,7 +1,7 @@
 <?php 
 	class Connect
 	{
-		function call_views($path,$data)
+		function call_views($path,$data=[])
 		{
 			require_once './mvc/views/'.$path .'.php';
 

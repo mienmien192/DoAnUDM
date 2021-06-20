@@ -37,7 +37,7 @@ class BaseModel extends Database
 		return mysqli_fetch_assoc($query);
 		}
 	public function registerUser($table, $data=[]){
-			
+
 		}
 	public function create($table, $data=[])
 	{		
