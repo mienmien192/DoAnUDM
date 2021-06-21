@@ -52,3 +52,35 @@
     </div>
   </div>
 </div> 
+<script>
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function(){
+      if (this.readyState == 4 && this.status == 200){
+          console.log(xmlhttp.responseText);
+          array = JSON.parse(xmlhttp.responseText);
+          console.log(array);
+        
+        var stt = 1;
+        html = array.map(item=>
+        `<tr>`
+            `<td >`+item['tensp']`</td>` +
+            `<td >`+item['img']`</td>` +
+            `<td >`+item['gia']`</td>` +
+            `<td >`+item['soluong']`</td>` +
+            `<td >`+item['xuatxu']`</td>` +
+           
+            `<td>`
+            `<a href="<?php echo URL ?>.'product/edit/'.`+item['id']+`">`Edit`</a>`
+            `</td>`
+            `<td>`
+            `<a href="<?php echo URL ?>.'product/delete/'.`+item['id']+`">`Delete`</a>`
+            `</td>`+
+            `</tr>`
+        );
+            $('#product').html(html);
+
+      }
+    };
+    xmlhttp.open('GET', "http://localhost:8080/codePHP/DOANUDM/product/", true);
+    xmlhttp.send(); 
+</script>

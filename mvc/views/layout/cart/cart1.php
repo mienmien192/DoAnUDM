@@ -104,8 +104,8 @@
         </div>
         <div class="humberger__menu__contact">
             <ul>
-                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                <li>Free Shipping for all Order of $99</li>
+                <li><i class="fa fa-envelope"></i> adelacosmetic@gmail.com</li>
+                <li>Miễn phí ship với đơn hàng trên 300.000</li>
             </ul>
         </div>
     </div>
@@ -153,7 +153,7 @@
                                 }
                                 ?>
                             </a>
-                             <!-- <a href="<?php echo URL.'register'?>" id="register">Register</a>     -->
+                             
                         </div>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                 <nav class="header__menu">
                     <ul>
                         <li class="active"><a href="">Home</a></li>
-                        <li><a href="./shop-grid.html">Shop</a></li>
+                        <li><a href="<?php echo URL.'layout/shopgrid'?>">Shop</a></li>
                         <li><a href="#">Pages</a>
                             <ul class="header__menu__dropdown">
                                 <li><a href="./shop-details.html">Shop Details</a></li>
@@ -180,8 +180,8 @@
                                 <li><a href="./blog-details.html">Blog Details</a></li>
                             </ul>
                         </li>
-                        <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        
+                        <li><a href="<?php echo URL.'layout/contactUs'?>">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -216,7 +216,7 @@
     <!-- Header Section End -->
 
     <!-- Hero Section Begin -->
-    <section class="hero">
+    <section class="hero hero-normal">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
@@ -240,14 +240,13 @@
                         </ul>
                     </div>
                 </div>
-    
                 <div class="col-lg-9">
                     <div class="hero__search">
                         <div class="hero__search__form">
-                            <form action="#" method='POST'>
-                               
-                                <input type="text" placeholder="Tìm sản phẩm...">
-                                <button type="submit" value="Search" name="search" class="site-btn"><i class="fa fa-search"></i></button>
+                        <form action="search.php" method="POST">
+                                
+                                <input type="text" placeholder="Tìm sản phẩm..." name="tensp">
+                                <button type="submit" class="site-btn" value="Search" name="search1"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
                         <div class="hero__search__phone">
@@ -255,12 +254,11 @@
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="hero__search__phone__text">
-                                <h5>+84 123 123 123</h5>
+                                <h5>+65 123 123 123</h5>
                                 <span>support 24/7 time</span>
                             </div>
                         </div>
                     </div>
-                   
                 </div>
             </div>
         </div>
@@ -383,7 +381,7 @@
                         </li>
                            
                         </ul>
-                        <a href="<?php echo URL.'cart1/checkout'; ?>" class="primary-btn">PROCEED TO CHECKOUT</a>
+                        <a href="<?php echo URL.'cart1/checkout'; ?>" class="primary-btn">TIẾN HÀNH KIỂM TRA</a>
                     </div>
                 </div>
             </div>

@@ -8,11 +8,11 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ogani | Template</title>
+    <title>Categories</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
     <!-- Css Styles -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="<?php echo URL_LAYOUT; ?>css/bootstrap.min.css" type="text/css">
@@ -23,10 +23,15 @@
     <link rel="stylesheet" href="<?php echo URL_LAYOUT; ?>css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="<?php echo URL_LAYOUT; ?>css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="<?php echo URL_LAYOUT; ?>css/style.css" type="text/css">
+    <style>
+    body{
+        font-family: 'Baloo Tammudu 2', cursive;
+    }
+    </style>
 </head>
 
 <body>
-    <!-- Page Preloder -->
+ 
 
 
     <!-- Humberger Begin -->
@@ -40,15 +45,15 @@
                 <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                 <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
             </ul>
-            <div class="header__cart__price">item: <span>$150.00</span></div>
+            
         </div>
         <div class="humberger__menu__widget">
             <div class="header__top__right__language">
                 <img src="<?php echo URL_LAYOUT;?>img/language.png" alt="">
-                <div>English</div>
+                <div>Vietnam</div>
                 <span class="arrow_carrot-down"></span>
                 <ul>
-                    <li><a href="#">Spanis</a></li>
+                    <li><a href="#">Vietnam</a></li>
                     <li><a href="#">English</a></li>
                 </ul>
             </div>
@@ -59,7 +64,7 @@
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
                 <li class="active"><a href="./index.html">Home</a></li>
-                <li><a href="./shop-grid.html">Shop</a></li>
+                <li><a href="">Shop</a></li>
                 <li><a href="#">Pages</a>
                     <ul class="header__menu__dropdown">
                         <li><a href="./shop-details.html">Shop Details</a></li>
@@ -77,12 +82,12 @@
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            <a href="<?php echo URL.'login/logout' ?>" class="logout"><i class="fa fa-pinterest-p"></i></a>
         </div>
         <div class="humberger__menu__contact">
             <ul>
-                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                <li>Free Shipping for all Order of $99</li>
+                <li><i class="fa fa-envelope"></i> adelacosmetic@gmail.com</li>
+                <li>Miễn phí ship với đơn hàng trên 300.000</li>
             </ul>
         </div>
     </div>
@@ -95,10 +100,12 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="header__top__left">
+                       
                             <ul>
-                                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                                <li>Free Shipping for all Order of $99</li>
+                                <li><i class="fa fa-envelope"></i> adelacosmetic@gmail.com</li>
+                                <li>Miễn phí ship với đơn hàng trên 300.000</li>
                             </ul>
+        <
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -118,9 +125,20 @@
                                     <li><a href="#">English</a></li>
                                 </ul>
                             </div>
-                            <div class="header__top__right__auth">
-                                <a href="#"><i class="fa fa-user"></i> Login</a>
-                            </div>
+                            <div class="header__top__right__auth" id="login1">
+                            <a href="<?php echo URL.'login' ?>" id="login2"><i class="fa fa-user"></i>
+                           
+                                <?php 
+                                if (isset($_SESSION['username'])){
+                                    echo $_SESSION['username'];
+                                } else
+                                { 
+                                    echo "Login";
+                                }
+                                ?>
+                            </a>
+                             
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -157,7 +175,7 @@
                             <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                             <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                         </ul>
-                        <div class="header__cart__price">item: <span>$150.00</span></div>
+                        
                     </div>
                 </div>
             </div>
@@ -176,20 +194,20 @@
                     <div class="hero__categories">
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
-                            <span>All departments</span>
+                            <span>Tất cả sản phẩm</span>
                         </div>
                         <ul>
-                            <li><a href="#">Fresh Meat</a></li>
-                            <li><a href="#">Vegetables</a></li>
-                            <li><a href="#">Fruit & Nut Gifts</a></li>
-                            <li><a href="#">Fresh Berries</a></li>
-                            <li><a href="#">Ocean Foods</a></li>
-                            <li><a href="#">Butter & Eggs</a></li>
-                            <li><a href="#">Fastfood</a></li>
-                            <li><a href="#">Fresh Onion</a></li>
-                            <li><a href="#">Papayaya & Crisps</a></li>
-                            <li><a href="#">Oatmeal</a></li>
-                            <li><a href="#">Fresh Bananas</a></li>
+                            <li><a href="#">Nước Hoa</a></li>
+                            <li><a href="#">Mỹ phẩm xách tay</a></li>
+                            <li><a href="#">Son</a></li>
+                            <li><a href="#">Toners</a></li>
+                            <li><a href="#">Phấn Má</a></li>
+                            <li><a href="#">Kẻ mắt</a></li>
+                            <li><a href="#">Kem nền</a></li>
+                            <li><a href="#">Mascara</a></li>
+                            <li><a href="#">Nước tẩy trang</a></li>
+                            <li><a href="#">Phấn mắt</a></li>
+                            <li><a href="#">Hoa tai</a></li>
                         </ul>
                     </div>
                 </div>
@@ -222,15 +240,15 @@
     <!-- Hero Section End -->
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="<?php echo URL_LAYOUT;?>img/banner/banner2.jpg">
+    <section class="breadcrumb-section set-bg" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Organi Shop</h2>
+                        <h2 style="color: #000">Categories</h2>
                         <div class="breadcrumb__option">
-                            <a href="./index.html">Home</a>
-                            <span>Shop</span>
+                            <a href="" style="color: #000">Home</a>
+                            <span style="color: #000">Shop</span>
                         </div>
                     </div>
                 </div>
@@ -246,100 +264,51 @@
                 <div class="col-lg-3 col-md-5">
                     <div class="sidebar">
                         <div class="sidebar__item">
-                            <h4>Department</h4>
-                            <ul>
-                                <li><a href="#">Fresh Meat</a></li>
-                                <li><a href="#">Vegetables</a></li>
-                                <li><a href="#">Fruit & Nut Gifts</a></li>
-                                <li><a href="#">Fresh Berries</a></li>
-                                <li><a href="#">Ocean Foods</a></li>
-                                <li><a href="#">Butter & Eggs</a></li>
-                                <li><a href="#">Fastfood</a></li>
-                                <li><a href="#">Fresh Onion</a></li>
-                                <li><a href="#">Papayaya & Crisps</a></li>
-                                <li><a href="#">Oatmeal</a></li>
-                            </ul>
+                               
+                        <h4>Tất cả sản phẩm</h4>
+                       
+                        <ul>
+                            <li><a href="#">Nước Hoa</a></li>
+                            <li><a href="#">Mỹ phẩm xách tay</a></li>
+                            <li><a href="#">Son</a></li>
+                            <li><a href="#">Toners</a></li>
+                            <li><a href="#">Phấn Má</a></li>
+                            <li><a href="#">Kẻ mắt</a></li>
+                            <li><a href="#">Kem nền</a></li>
+                            <li><a href="#">Mascara</a></li>
+                            <li><a href="#">Nước tẩy trang</a></li>
+                            <li><a href="#">Phấn mắt</a></li>
+                            <li><a href="#">Hoa tai</a></li>
+                        </ul>
                         </div>
                         <div class="sidebar__item">
-                            <h4>Price</h4>
-                            <div class="price-range-wrap">
-                                <div class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
-                                    data-min="10" data-max="540">
-                                    <div class="ui-slider-range ui-corner-all ui-widget-header"></div>
-                                    <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
-                                    <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
-                                </div>
-                                <div class="range-slider">
-                                    <div class="price-input">
-                                        <input type="text" id="minamount">
-                                        <input type="text" id="maxamount">
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
-                        <div class="sidebar__item sidebar__item__color--option">
-                            <h4>Colors</h4>
-                            <div class="sidebar__item__color sidebar__item__color--white">
-                                <label for="white">
-                                    White
-                                    <input type="radio" id="white">
-                                </label>
-                            </div>
-                            <div class="sidebar__item__color sidebar__item__color--gray">
-                                <label for="gray">
-                                    Gray
-                                    <input type="radio" id="gray">
-                                </label>
-                            </div>
-                            <div class="sidebar__item__color sidebar__item__color--red">
-                                <label for="red">
-                                    Red
-                                    <input type="radio" id="red">
-                                </label>
-                            </div>
-                            <div class="sidebar__item__color sidebar__item__color--black">
-                                <label for="black">
-                                    Black
-                                    <input type="radio" id="black">
-                                </label>
-                            </div>
-                            <div class="sidebar__item__color sidebar__item__color--blue">
-                                <label for="blue">
-                                    Blue
-                                    <input type="radio" id="blue">
-                                </label>
-                            </div>
-                            <div class="sidebar__item__color sidebar__item__color--green">
-                                <label for="green">
-                                    Green
-                                    <input type="radio" id="green">
-                                </label>
-                            </div>
-                        </div>
+                        
                         <div class="sidebar__item">
-                            <h4>Popular Size</h4>
+                            <h4>Sản phẩm phổ biến</h4>
                             <div class="sidebar__item__size">
                                 <label for="large">
-                                    Large
-                                    <input type="radio" id="large">
+                                    Phấn mắt
+                                    <input type="radio" >
                                 </label>
                             </div>
                             <div class="sidebar__item__size">
                                 <label for="medium">
-                                    Medium
-                                    <input type="radio" id="medium">
+                                    Son môi
+                                    <input type="radio" >
                                 </label>
                             </div>
                             <div class="sidebar__item__size">
                                 <label for="small">
-                                    Small
-                                    <input type="radio" id="small">
+                                    Kem nền
+                                    <input type="radio">
                                 </label>
                             </div>
                             <div class="sidebar__item__size">
                                 <label for="tiny">
-                                    Tiny
-                                    <input type="radio" id="tiny">
+                                    Kem lót
+                                    <input type="radio">
                                 </label>
                             </div>
                         </div>
@@ -409,7 +378,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4">              
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
                                             data-setbg="<?php echo URL_LAYOUT;?>img/product/becca.jpg">
@@ -472,21 +441,18 @@
                                 <div class="filter__sort">
                                     <span>Sort By</span>
                                     <select>
-                                        <option value="0">Default</option>
-                                        <option value="0">Default</option>
+                                        <option value="0">sản phẩm nổi bật</option>
+                                        <option value="0">Giá thấp đến cao</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4">
                                 <div class="filter__found">
-                                    <h6><span>16</span> Products found</h6>
+                                    
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-3">
-                                <div class="filter__option">
-                                    <span class="icon_grid-2x2"></span>
-                                    <span class="icon_ul"></span>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
