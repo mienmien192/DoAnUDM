@@ -35,6 +35,7 @@ class loginController extends Connect
 	}
 	function logout(){
 		unset($_SESSION['username']);
+		Header("Location:".URL);
 	}
 } 
 ?>

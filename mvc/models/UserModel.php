@@ -24,5 +24,6 @@ class UserModel extends BaseModel
 			return $this->loginUser(self::TABLE,$username,$password);
 
 		}
+		
 	}
  ?>
