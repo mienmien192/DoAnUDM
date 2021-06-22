@@ -15,7 +15,7 @@
 		function index(){
 			if(isset($_POST['register'])){
 				$user=[
-					'username'=>$_POST['email'],
+					'username'=>$_POST['username'],
 					'password'=>$_POST['password'],
 					'phone'=>$_POST['phone'],
 					'ho'=>$_POST['ho'],
