@@ -20,6 +20,18 @@ class ProductModel extends BaseModel
 			$this->delete(self::TABLE,$id);
 
 		}
+		public function searchByName($name_search)
+		{
+			$qr = "select * from sanpham where tensp like '%$name_search%'";
+
+			$query = $this->_query($qr);
+			$data = [];
+			while ($row = mysqli_fetch_assoc($query)) {
+				array_push($data, $row);
+			}
+			return $data;
+				
+		}
 	}
 
  ?>
