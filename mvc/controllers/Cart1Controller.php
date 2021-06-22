@@ -3,13 +3,13 @@
 	class Cart1Controller extends Connect
 	{
 		private $productModel;
-		private $customerModel;
+		private $userModel;
 		function __construct()
 		{
 			$this->call_models('ProductModel');
 			$this->productModel=new ProductModel;
-			$this->call_models('CustomerModel');
-			$this->customerModel=new CustomerModel;
+			$this->call_models('UserModel');
+			$this->userModel=new UserModel;
 		}
 		function index(){
 			// unset($_SESSION['cart']);die();
@@ -59,10 +59,10 @@
 			if(isset($_SESSION['cart']))
 			{
 				$data['cart']=$_SESSION['cart'];
-				$data['customer']=$this->customerModel->findByEmail($_SESSION['username']);
+				$data['user']=$this->userModel->findByEmail($_SESSION['username']);
 			}
 			else{
-				$data['cart'];
+				$data['cart']=[];
 			} 
 			$this->call_views('layout/cart/checkout',$data);
 		}

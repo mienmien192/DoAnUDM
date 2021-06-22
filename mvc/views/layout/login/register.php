@@ -24,16 +24,45 @@
 <style>
 	*{
 		padding: 2.5px;
+        
 	}
+    body{
+        background-image:url(.//public/layout/img/banner/register.jpg);
+        background-size: cover;
+    }
 	.error {
         color: red;
         display: block;
         
         }
+        .login .btn_login{
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .login .row{
+            color: #fff;
+        }
+        .login .btn_login:hover{
+            background: olivedrab;
+            transition: 0.5s;
+        }
+        .login .register_ex{
+            font-size: 24px;
+            color: #fff;
+        }
 </style>
 <body >
 	<div class="content_register">
-		<p class="trangchu"><a href="<?php echo URL; ?>">Home</a><span style="color:#000!important;">/</span> Đăng ký tài khoản</p>
+	
 		<h1 class="register_account">ĐĂNG KÝ TÀI KHOẢN</h1>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form">
@@ -67,24 +96,31 @@
 									<label>Mật Khẩu:</label><br>
 									<input id="password" name="password" type="password" class="form-control form-control-lg" placeholder="Mật khẩu">
 								</div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+									<label>Nhập lại mật Khẩu:</label><br>
+									<input name="cpassword" id="cpassword" type="password" class="form-control form-control-lg" placeholder="Xác nhận mật khẩu">
+								</div>
 							</div>
                             <div class="row">
 								<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-									<label>Nhập lại mật Khẩu:</label><br>
-									<input name="cpassword" id="cpassword" type="password" class="form-control form-control-lg" placeholder="Xác nhận mật khẩu">
+									<label>Địa chỉ:</label><br>
+									<input name="diachi" id="diachi" type="text" class="form-control form-control-lg" placeholder="Địa chỉ">
 								</div>
 							</div>
 							<button name="register" class="btn_login mb-2 mt-3" type="submit" value="Đăng ký">Đăng ký</button>
 						</form>
 						<div class="register_ex">
 							<p class="login_here mt-2">Bạn đã có tài khoản, hãy Đăng nhập <a href="<?php echo URL.'login'; ?>" style="color:#ef7147; text-decoration: none;">tại đây</a></p>
-						</div>
+        	                <p class="trangchu"><a href="<?php echo URL; ?>">Home</a><span style="color:#000!important;">/</span>Quay lại trang chủ </p>
+                        </div>
 						
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+    
 
     <script>
         $().ready(function () {
@@ -100,7 +136,7 @@
                        required: true,
                        minlength: 1
                    },
-                   "email": {
+                   "username": {
                        required: true,
                        email: true
                    },
@@ -111,6 +147,10 @@
                        minlength: 10,
                    },
                    "password": {
+                       required: true,
+                       minlength: 5
+                   },
+                   "diachi": {
                        required: true,
                        minlength: 5
                    },
@@ -128,7 +168,7 @@
                        required: "Vui lòng nhập tên",
                        minlength: "Tên không có"
                    },
-                   "email": {
+                   "username": {
                        required: "Vui lòng nhập email",
                        email: "Vui lòng nhập đúng địa chỉ email"
                    },
@@ -141,6 +181,10 @@
                    "password": {
                        required: "Vui lòng nhập password",
                        minlength: "Vui lòng nhập ít nhất 5 kí tự"
+                   },
+                   "diachi": {
+                       required: "Vui lòng nhập địa chỉ",
+                       minlength: "Vui lòng nhập đúng địa chỉ"
                    },
                    "cpassword": {
                     required: "Vui lòng nhập password ",

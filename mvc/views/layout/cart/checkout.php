@@ -268,20 +268,20 @@
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>Họ<span>*</span></p>
-                                        <input type="text" value="<?php echo $data['customer']['ho']; ?>">
+                                        <input type="text" value="<?php echo $data['user']['ho']; ?>">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>Tên<span>*</span></p>
-                                        <input type="text" value="<?php echo $data['customer']['ten']; ?>">
+                                        <input type="text" value="<?php echo $data['user']['ten']; ?>">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="checkout__input">
                                 <p>Địa chỉ<span>*</span></p>
-                                <input type="text" placeholder="Street Address" class="checkout__input__add" value="<?php echo $data['customer']['diachi']; ?>">
+                                <input type="text" placeholder="Street Address" class="checkout__input__add" value="<?php echo $data['user']['diachi']; ?>">
                                 
                             </div>
 
@@ -289,13 +289,13 @@
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>Số điện thoại<span>*</span></p>
-                                        <input type="text" value="<?php echo $data['customer']['sdt']; ?>">
+                                        <input type="text" value="<?php echo $data['user']['phone']; ?>">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>Email<span>*</span></p>
-                                        <input type="email" value="<?php echo $data['customer']['email']; ?>" id="emailCustom">
+                                        <input type="email" value="<?php echo $data['user']['username']; ?>" id="emailCustom">
                                     </div>
                                 </div>
                             </div>
