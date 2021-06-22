@@ -20,6 +20,7 @@
 					'phone'=>$_POST['phone'],
 					'ho'=>$_POST['ho'],
 					'ten'=>$_POST['ten'],
+					'diachi'=>$_POST['diachi'],
 					'level'=>1
 				];
 				$this->userModel->store($user);

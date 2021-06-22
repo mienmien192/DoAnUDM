@@ -16,6 +16,9 @@ class UserModel extends BaseModel
 			$this->updateNew(self::TABLE,$id,$data);
 
 		}
+		public function findByEmail($email){
+			return $this->findEmail(self::TABLE, $email);
+		}
 		public function destroy($id){
 			$this->delete(self::TABLE,$id);
 

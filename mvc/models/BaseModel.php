@@ -74,7 +74,7 @@ class BaseModel extends Database
 	}
 	public function findEmail($table, $email)
 	{
-		$sql="SELECT * FROM ${table} WHERE email='${email}' ";
+		$sql="SELECT * FROM ${table} WHERE username='${email}' ";
 		$query=$this->_query($sql);
 		return mysqli_fetch_assoc($query);
 		
