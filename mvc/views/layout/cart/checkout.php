@@ -81,7 +81,7 @@
         </div>
         <div class="humberger__menu__contact">
             <ul>
-                <li><i class="fa fa-envelope"></i> adelacosmetic@gmail.com</li>
+                <li><i class="fa fa-envelope"></i> adelacosmetic.vlog@gmail.com</li>
                 <li>Miễn phí ship với đơn hàng trên 300.000</li>
             </ul>
         </div>
@@ -350,7 +350,7 @@
                         <ul>
                             <li>Address: 164 Nguyen Thi Minh Khai, 1st District, Ho Chi Minh City</li>
                             <li>Phone: 123 123 123</li>
-                            <li>Email: adelacosmetic@gmail.com</li>
+                            <li>Email: adelacosmetic.vlog@gmail.com</li>
                         </ul>
                     </div>
                 </div>

@@ -134,7 +134,7 @@
                     <div class="contact__widget">
                         <span class="icon_mail_alt"></span>
                         <h4>Email</h4>
-                        <p>adelacosmetic@gmail.com</p>
+                        <p>adelacosmetic.vlog@gmail.com</p>
                     </div>
                 </div>
             </div>

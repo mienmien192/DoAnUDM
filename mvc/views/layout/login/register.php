@@ -19,7 +19,9 @@
 	<!-- Theme style -->
 	<link rel="stylesheet" href="<?php echo URL_ADMIN; ?>dist/css/adminlte.min.css">
 	<!-- Google Font: Source Sans Pro -->
-	<link href="<?php echo URL_ADMIN; ?>https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="<?php echo URL_ADMIN; ?>https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <style>
 	*{
@@ -27,7 +29,7 @@
         
 	}
     body{
-        background-image:url(.//public/layout/img/banner/register.jpg);
+        background: url(../DOANUDM/public/layout/img/banner/banner5.jpg);
         background-size: cover;
     }
 	.error {
@@ -35,89 +37,100 @@
         display: block;
         
         }
-        .login .btn_login{
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 10px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
         .login .row{
-            color: #fff;
+            color: #000;
         }
-        .login .btn_login:hover{
-            background: olivedrab;
-            transition: 0.5s;
+
+        .register_account{
+            font-family: 'Sacramento', cursive;
+            font-weight:bold;
+            font-size: 50px;
         }
-        .login .register_ex{
-            font-size: 24px;
-            color: #fff;
-        }
+        .login-card-body{
+      background: rgba(255, 255, 255, .5);
+      border-radius: 10px;
+      
+
+    }
+    .login-logo b{
+        font-weight: bold;
+        color: #000;
+        font-family: 'Sacramento', cursive; 
+        font-size: 38px;
+    }
+
+   .mb-0 b{
+        color: green;
+   }
+   .login-box{
+       margin-top: 40px;
+   }
 </style>
 <body >
 	<div class="content_register">
 	
-		<h1 class="register_account">ĐĂNG KÝ TÀI KHOẢN</h1>
-		<div class="row">
+   
+		<center><div class="login-box">
+        <div class="login-logo">
+    <a href="#"><b>Adela Cosmetic Xin chào</b></a>
+         </div>
+        <div class="card-body login-card-body">
+        <div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form">
 				<div class="page_login">
 					<div class="login">
 						<form name="register" id="register" method="POST">
 							<div class="row">
-								<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-									<label>Họ:</label><br>
-									<input name="ho" type="text" class="form-control form-control-lg" placeholder="Họ">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									 <input name="ho" type="text" class="form-control form-control-md" placeholder="Họ">
 								</div>
 
-								<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-									<label>Tên:</label><br>
-									<input name="ten" type="text" class="form-control form-control-lg" placeholder="Tên">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									
+									<input name="ten" type="text" class="form-control form-control-md" placeholder="Tên">
 								</div>
 							</div>
 
 							<div class="row">
-								<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-									<label>Email:</label><br>
-									<input name="username" type="email" class="form-control form-control-lg" placeholder="Email">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								
+									<input name="username" type="email" class="form-control form-control-md" placeholder="Email">
 								</div>
-								<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-									<label>Điện thoại:</label><br>
-									<input name="phone" type="text" class="form-control form-control-lg" placeholder="Số điện thoại">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									
+									<input name="phone" type="text" class="form-control form-control-md" placeholder="Số điện thoại">
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-									<label>Mật Khẩu:</label><br>
-									<input id="password" name="password" type="password" class="form-control form-control-lg" placeholder="Mật khẩu">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									
+									<input id="password" name="password" type="password" class="form-control form-control-md" placeholder="Mật khẩu">
 								</div>
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-									<label>Nhập lại mật Khẩu:</label><br>
-									<input name="cpassword" id="cpassword" type="password" class="form-control form-control-lg" placeholder="Xác nhận mật khẩu">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									
+									<input name="cpassword" id="cpassword" type="password" class="form-control form-control-md" placeholder="Xác nhận mật khẩu">
 								</div>
 							</div>
                             <div class="row">
-								<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-									<label>Địa chỉ:</label><br>
-									<input name="diachi" id="diachi" type="text" class="form-control form-control-lg" placeholder="Địa chỉ">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									
+									<input name="diachi" id="diachi" type="text" class="form-control form-control-md" placeholder="Địa chỉ">
 								</div>
 							</div>
-							<button name="register" class="btn_login mb-2 mt-3" type="submit" value="Đăng ký">Đăng ký</button>
+							<button name="register" class="btn btn-warning mb-2 mt-3" type="submit" value="Đăng ký">Đăng ký</button>
+
 						</form>
-						<div class="register_ex">
-							<p class="login_here mt-2">Bạn đã có tài khoản, hãy Đăng nhập <a href="<?php echo URL.'login'; ?>" style="color:#ef7147; text-decoration: none;">tại đây</a></p>
-        	                <p class="trangchu"><a href="<?php echo URL; ?>">Home</a><span style="color:#000!important;">/</span>Quay lại trang chủ </p>
-                        </div>
+						
+                        <p class="mb-0">
+                            <a href="<?php echo URL.'login'; ?>" style="color: #000" class="text-center">Đã có tài khoản? <b>Đăng nhập</b></a>
+                        </p>
 						
 					</div>
 				</div>
 			</div>
 		</div>
+        </div>
+        </div></center>
 	</div>
 
     

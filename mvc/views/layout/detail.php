@@ -82,7 +82,7 @@
         </div>
         <div class="humberger__menu__contact">
             <ul>
-                <li><i class="fa fa-envelope"></i> adelacosmetic@gmail.com</li>
+                <li><i class="fa fa-envelope"></i> adelacosmetic.vlog@gmail.com</li>
                 <li>Miễn phí ship cho hóa đơn trên 300.000 VND</li>
             </ul>
         </div>

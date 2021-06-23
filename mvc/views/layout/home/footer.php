@@ -9,7 +9,7 @@
                         <ul>
                             <li>Address: 164 Nguyen Thi Minh Khai, 1st District, Ho Chi Minh City</li>
                             <li>Phone: 123 123 123</li>
-                            <li>Email: adelacosmetic@gmail.com</li>
+                            <li>Email: adelacosmetic.vlog@gmail.com</li>
                         </ul>
                     </div>
                 </div>

@@ -36,9 +36,10 @@
         font-family: 'Sacramento', cursive; 
         font-size: 40px;
     }
-    .card{
-      background: none;
-    }
+    
+    .mb-0 b{
+        color: green;
+   }
   </style>
 </head>
 <body class="login-page">
@@ -47,7 +48,7 @@
     <a href="#"><b>Adela Cosmetic Xin chào</b></a>
   </div>
   <!-- /.login-logo -->
-  <div class="card">
+ 
     <div class="card-body login-card-body">
       <p class="login-box-msg" style="color: red">
       	<?php 
@@ -85,7 +86,7 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-warning btn-block" name="login">Sign In</button>
+            <button type="submit" class="btn btn-warning " name="login">Sign In</button>
           </div>
           <!-- /.col -->
         </div>
@@ -104,9 +105,9 @@
         <a href="reset-password.php" style="color: #000"  >Quên mật khẩu? </a>
       </p>
       <p class="mb-0">
-        <a href="register" style="color: #000" class="text-center">Chưa có tài khoản? Đăng ký ngay</a>
+        <a href="register" style="color: #000" class="text-center">Chưa có tài khoản? <b>Đăng ký ngay</b></a>
       </p>
-    </div>
+    
     <!-- /.login-card-body -->
   </div>
 </div>
