@@ -14,15 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
     <!-- Css Styles -->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <link rel="stylesheet" href="<?php echo URL_LAYOUT; ?>css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo URL_LAYOUT; ?>css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo URL_LAYOUT; ?>css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo URL_LAYOUT; ?>css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo URL_LAYOUT; ?>css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo URL_LAYOUT; ?>css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo URL_LAYOUT; ?>css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo URL_LAYOUT; ?>css/style.css" type="text/css">
+    <?php
+    require_once('home/css.php');
+    ?> 
     <style>
     body{
         font-family: 'Baloo Tammudu 2', cursive;
@@ -122,24 +116,32 @@
                     <div class="sidebar">
                         <div class="sidebar__item">
                                
-                        <h4>Tất cả sản phẩm</h4>
-                       
-                        <ul>
-                            <li><a href="#">Nước Hoa</a></li>
-                            <li><a href="#">Mỹ phẩm xách tay</a></li>
-                            <li><a href="#">Son</a></li>
-                            <li><a href="#">Toners</a></li>
-                            <li><a href="#">Phấn Má</a></li>
-                            <li><a href="#">Kẻ mắt</a></li>
-                            <li><a href="#">Kem nền</a></li>
-                            <li><a href="#">Mascara</a></li>
-                            <li><a href="#">Nước tẩy trang</a></li>
-                            <li><a href="#">Phấn mắt</a></li>
-                            <li><a href="#">Hoa tai</a></li>
-                        </ul>
+                        <h4>Khoảng giá</h4>
+                            <div class="list-group">
+                                <input type="hidden" id="hidden_minimum_price" value="0">
+                                <input type="hidden" id="hidden_maximum_price" value="5000000">
+                                <p id="price_show">Từ 50 nghìn - 100 triệu</p>
+                                <div id="price_range"></div>
+                            </div>
+
+                        
+
                         </div>
                         <div class="sidebar__item">
-                            
+                            <h4>Thương hiệu sản phẩm</h4>
+                            <div class="list-group"> 
+                                <?php 
+                                    foreach ($data['product'] as $key => $value) {
+                                ?>
+                                <div class="list-group-item">
+                               
+                                    <input type="checkbox" class="common_selector brand" value="<?php echo $value['category']; ?>"><?php echo $value['category']; ?>
+                                </div>
+                                
+                                <?php 
+                                   }
+                                ?>
+                            </div>
                         </div>
                         
                         <div class="sidebar__item">
@@ -193,9 +195,9 @@
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
-                                            <span>Dried Fruit</span>
-                                            <h5><a href="#">Raisin’n’nuts</a></h5>
-                                            <div class="product__item__price">$30.00 <span>$36.00</span></div>
+                                            <span>Bảng màu mắt BECCA Après Ski Glow Face Palette</span>
+                                            <h5><a href="#">Hàn Quốc</a></h5>
+                                            <div class="product__item__price">380,000 VND <span>1,990,000 VND</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -211,9 +213,9 @@
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
-                                            <span>Vegetables</span>
-                                            <h5><a href="#">Vegetables’package</a></h5>
-                                            <div class="product__item__price">$30.00 <span>$36.00</span></div>
+                                            <span>Bảng màu mắt BECCA Après Ski Glow Face Palette</span>
+                                            <h5><a href="#">Hàn Quốc</a></h5>
+                                            <div class="product__item__price">380,000 VND <span>1,990,000 VND</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -229,27 +231,9 @@
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
-                                            <span>Dried Fruit</span>
-                                            <h5><a href="#">Mixed Fruitss</a></h5>
-                                            <div class="product__item__price">$30.00 <span>$36.00</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">              
-                                    <div class="product__discount__item">
-                                        <div class="product__discount__item__pic set-bg"
-                                            data-setbg="<?php echo URL_LAYOUT;?>img/product/becca.jpg">
-                                            <div class="product__discount__percent">-20%</div>
-                                            <ul class="product__item__pic__hover">
-                                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="product__discount__item__text">
-                                            <span>Dried Fruit</span>
-                                            <h5><a href="#">Raisin’n’nuts</a></h5>
-                                            <div class="product__item__price">$30.00 <span>$36.00</span></div>
+                                            <span>Bảng màu mắt BECCA Après Ski Glow Face Palette</span>
+                                            <h5><a href="#">Hàn Quốc</a></h5>
+                                            <div class="product__item__price">380,000 VND <span>1,990,000 VND</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -265,9 +249,9 @@
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
-                                            <span>Dried Fruit</span>
-                                            <h5><a href="#">Raisin’n’nuts</a></h5>
-                                            <div class="product__item__price">$30.00 <span>$36.00</span></div>
+                                            <span>Bảng màu mắt BECCA Après Ski Glow Face Palette</span>
+                                            <h5><a href="#">Hàn Quốc</a></h5>
+                                            <div class="product__item__price">380,000 VND <span>1,990,000 VND</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -283,9 +267,9 @@
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
-                                            <span>Dried Fruit</span>
-                                            <h5><a href="#">Raisin’n’nuts</a></h5>
-                                            <div class="product__item__price">$30.00 <span>$36.00</span></div>
+                                            <span>Bảng màu mắt BECCA Après Ski Glow Face Palette</span>
+                                            <h5><a href="#">Hàn Quốc</a></h5>
+                                            <div class="product__item__price">380,000 VND <span>1,990,000 VND</span></div>
                                         </div>
                                     </div>
                                 </div>

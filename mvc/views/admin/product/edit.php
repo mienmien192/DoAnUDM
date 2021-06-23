@@ -34,6 +34,10 @@
 					<label for="inputName">Xuất xứ</label>
 					<input type="text"  class="form-control"id="inputName" placeholder="Xuất xứ" name="xuatxu" value="<?php echo $data['product']['xuatxu']; ?>">
 				</div>	
+				<div class="form-group">
+					<label for="inputName">Category</label>
+					<input type="text"  class="form-control"id="inputName" placeholder="Category" name="category" value="<?php echo $data['product']['category']; ?>">
+				</div>	
 				<input type="submit" value="Edit Product" class="btn btn-success float-left px-5 py-3" name="editProduct">
 				<!-- /.card-body -->
 

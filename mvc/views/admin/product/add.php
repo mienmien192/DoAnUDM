@@ -27,6 +27,10 @@
 					<label for="inputName">Xuất xứ</label>
 					<input type="text"  class="form-control"id="inputName" placeholder="Xuất xứ" name="xuatxu">
 				</div>	
+				<div class="form-group">
+					<label for="inputName">Category</label>
+					<input type="text"  class="form-control"id="inputName" placeholder="Category" name="category">
+				</div>
 				<input type="submit" value="Insert Product" class="btn btn-success float-left px-5 py-3" name="addProduct">
 				<!-- /.card-body -->
 

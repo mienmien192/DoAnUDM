@@ -97,7 +97,7 @@
 
     
     <!-- Hero Section Begin -->
-        <section class="hero">
+        <section class="hero hero-normal">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
@@ -192,8 +192,10 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="primary-btn">ADD TO CARD</a>
+                        
+                        <a href="<?php echo URL.'cart1/store/'.$value['id'];?>" class="primary-btn">ADD TO CARD</a>
                         <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+                        
                         <ul>
                             <li><b>Availability</b> <span>Còn hàng</span></li>
                             <li><b>Shipping</b> <span>01 day shipping. <samp>Free pickup today</samp></span></li>
@@ -264,8 +266,8 @@
                             </ul>
                         </div>
                         <div class="product__item__text">
-                            <h6><a href="#">Phấn mắt Becca</a></h6>
-                            <h5>250.000 VND</h5>
+                            <h6><a href="#">Bảng màu mắt BECCA Après Ski Glow Face Palette</a></h6>
+                            <h5>380,000vnd</h5>
                         </div>
                     </div>
                 </div>
