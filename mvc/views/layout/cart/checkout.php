@@ -305,11 +305,7 @@
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>Email<span>*</span></p>
-<<<<<<< HEAD
-                                        <input type="mail" value="<?php echo $data['user']['email']; ?>" id="emailUser">
-=======
-                                        <input type="email" value="<?php echo $data['user']['email']; ?>" id="emailCustom">
->>>>>>> 03abb1ae90f54222d7ac4d7eedd4f817f02531e8
+                                        <input type="mail" value="<?php echo $data['user']['email']; ?>" id="emailCustom">
                                     </div>
                                 </div>
                             </div>
@@ -406,10 +402,8 @@
                 </div>
             </div>
         </div>
-    </footer>
- <!-- Footer Section Begin -->
- 
-  <!-- Footer Section End -->
+</footer>
+
 
   <!-- Js Plugins -->
   <script src="<?php echo URL_LAYOUT;?>js/jquery-3.3.1.min.js"></script>
@@ -429,7 +423,7 @@
         
         // alert(emailCustom);
         Email.send({
-           SecureToken: "3d9c3152-ca22-44ad-903a-573d30e31b63",
+           SecureToken: "eff372bf-2c32-47c6-a971-ef276b9a8ead",
             To : emailCustom,
             From : "adelacosmetic.vlog@gmail.com",
             Subject : "Xác nhận đơn hàng",
