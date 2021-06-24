@@ -15,11 +15,11 @@
 		function index(){
 			if(isset($_POST['register'])){
 				$user=[
+					'ho'=>$_POST['ho'],
+					'ten'=>$_POST['ten'],
 					'username'=>$_POST['username'],
 					'password'=>$_POST['password'],
 					'phone'=>$_POST['phone'],
-					'ho'=>$_POST['ho'],
-					'ten'=>$_POST['ten'],
 					'diachi'=>$_POST['diachi'],
 					'level'=>1
 				];
