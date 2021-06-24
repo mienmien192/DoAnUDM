@@ -305,11 +305,7 @@
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>Email<span>*</span></p>
-<<<<<<< HEAD
-                                        <input type="mail" value="<?php echo $data['user']['email']; ?>" id="emailCustom">
-=======
-                                        <input type="email" value="<?php echo $data['user']['email']; ?>" id="emailUser">
->>>>>>> a32b9067a936002f05eb2c3db555f4d04d1159b1
+                                        <input type="email" value="<?php echo $data['user']['email']; ?>" id="emailCustom">
                                     </div>
                                 </div>
                             </div>
@@ -344,7 +340,7 @@
                                  // echo $tong; ?>
                              </span></div>
 
-                             <button type="submit" class="site-btn datHang">ĐẶT HÀNG</button>
+                             <button type="submit" class="site-btn Order">ĐẶT HÀNG</button>
                          </div>
                      </div>
                  </div>
@@ -412,19 +408,24 @@
   <!-- Footer Section End -->
 
   <!-- Js Plugins -->
-  <?php
-    require_once('cart/js.php');
-    ?> 
+  <script src="<?php echo URL_LAYOUT;?>js/jquery-3.3.1.min.js"></script>
+    <script src="<?php echo URL_LAYOUT;?>js/bootstrap.min.js"></script>
+    <script src="<?php echo URL_LAYOUT;?>js/jquery.nice-select.min.js"></script>
+    <script src="<?php echo URL_LAYOUT;?>js/jquery-ui.min.js"></script>
+    <script src="<?php echo URL_LAYOUT;?>js/jquery.slicknav.js"></script>
+    <script src="<?php echo URL_LAYOUT;?>js/mixitup.min.js"></script>
+    <script src="<?php echo URL_LAYOUT;?>js/owl.carousel.min.js"></script>
+    <script src="<?php echo URL_LAYOUT;?>js/main.js"></script>
 
 
   <script type="text/javascript">
-      $('button.datHang').click(function(event)
+      $('button.Order').click(function(event)
       {
-        var emailCustom=$('input#emailUser').val();
-       
-        alert(emailCustom);
+        var emailCustom=$('input#emailCustom').val();
+        
+        // alert(emailCustom);
         Email.send({
-           SecureToken: "631f9408-a2e9-4f61-849c-97dd71f154e4",
+           SecureToken: "3d9c3152-ca22-44ad-903a-573d30e31b63",
             To : emailCustom,
             From : "adelacosmetic.vlog@gmail.com",
             Subject : "Xác nhận đơn hàng",

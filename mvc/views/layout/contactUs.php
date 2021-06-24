@@ -21,6 +21,9 @@
     body{
         font-family: 'Baloo Tammudu 2', cursive;
     }
+    .site-btn:hover{
+        background: green;
+    }
     </style>
 </head>
 
