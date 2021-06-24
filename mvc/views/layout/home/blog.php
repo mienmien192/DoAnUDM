@@ -11,7 +11,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="blog__item">
                         <div class="blog__item__pic">
-                            <img src="<?php echo URL_LAYOUT; ?>img/blog/blog-1.jpg" alt="">
+                            <img src="<?php echo URL_LAYOUT; ?>img/banner/banner3.jpg" alt="">
                         </div>
                         <div class="blog__item__text">
                             <ul>
@@ -26,7 +26,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="blog__item">
                         <div class="blog__item__pic">
-                            <img src="<?php echo URL_LAYOUT; ?>img/blog/blog-2.jpg" alt="">
+                            <img src="<?php echo URL_LAYOUT; ?>img/banner/banner5.jpg" alt="">
                         </div>
                         <div class="blog__item__text">
                             <ul>
@@ -41,7 +41,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="blog__item"> 
                         <div class="blog__item__pic">
-                            <img src="<?php echo URL_LAYOUT; ?>img/blog/blog-3.jpg" alt="">
+                            <img src="<?php echo URL_LAYOUT; ?>img/banner/banner1.jpg" alt="">
                         </div>
                         <div class="blog__item__text">
                             <ul>
