@@ -19,7 +19,7 @@
 			if(isset($_POST['x'])){
 				
 				$user=[
-					'username'=>$_POST['username'],
+					'email'=>$_POST['username'],
 					'password'=>$_POST['password'],
 					'level'=>$_POST['level']
 				];
@@ -36,7 +36,7 @@
 			if(isset($_POST['editUser']))
 			{
 				$user=[
-					'username'=>$_POST['username'],
+					'email'=>$_POST['username'],
 					'password'=>$_POST['password'],
 					'level'=>$_POST['level']
 				];

@@ -305,11 +305,7 @@
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>Email<span>*</span></p>
-<<<<<<< HEAD
-                                        <input type="mail" value="<?php echo $data['user']['email']; ?>" id="emailCustom">
-=======
-                                        <input type="email" value="<?php echo $data['user']['email']; ?>" id="emailUser">
->>>>>>> a32b9067a936002f05eb2c3db555f4d04d1159b1
+                                        <input type="mail" value="<?php echo $data['user']['email']; ?>" id="emailUser">
                                     </div>
                                 </div>
                             </div>

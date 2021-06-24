@@ -10,7 +10,7 @@
 			<div class="card-body">
 				<div class="form-group">
 					<label for="inputName">Username</label>
-					<input type="text" class="form-control" id="inputName" name="username" placeholder="username" value="<?php echo $data['user']['username']; ?>">
+					<input type="text" class="form-control" id="inputName" name="username" placeholder="username" value="<?php echo $data['user']['email']; ?>">
 				</div>
 				<div class="form-group">
 					<label for="inputName">Password</label>

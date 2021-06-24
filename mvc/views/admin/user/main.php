@@ -26,7 +26,7 @@
                   	
                   	 ?>
                   <tr role="row" class="odd">
-                    <td class="sortg_1" tabindex="0"><?php echo $value['username']; ?></td>
+                    <td class="sortg_1" tabindex="0"><?php echo $value['email']; ?></td>
                     <td><?php echo $value['password']; ?></td>
                     <td><?php echo $value['level']; ?></td>
                     <td><a href="<?php echo URL."user/edit/${value['id']}"; ?>">Edit</a></td>
