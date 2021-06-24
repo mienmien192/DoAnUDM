@@ -29,7 +29,7 @@ class BaseModel extends Database
 		return mysqli_query($this->connect,$sql);
 	}
 	public function loginUser($table, $username, $password){
-		$sql="SELECT * FROM ${table} WHERE username='${username}' and password='${password}'";
+		$sql="SELECT * FROM ${table} WHERE email='${username}' and password='${password}'";
 		$query=$this->_query($sql);
 		// echo ($sql);
 		// die();
@@ -74,7 +74,7 @@ class BaseModel extends Database
 	}
 	public function findEmail($table, $email)
 	{
-		$sql="SELECT * FROM ${table} WHERE username='${email}' ";
+		$sql="SELECT * FROM ${table} WHERE email='${email}' ";
 		$query=$this->_query($sql);
 		return mysqli_fetch_assoc($query);
 		

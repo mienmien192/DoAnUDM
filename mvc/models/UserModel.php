@@ -23,8 +23,8 @@ class UserModel extends BaseModel
 			$this->delete(self::TABLE,$id);
 
 		}
-		public function login($username, $password){
-			return $this->loginUser(self::TABLE,$username,$password);
+		public function login($email, $password){
+			return $this->loginUser(self::TABLE,$email,$password);
 
 		}
 		

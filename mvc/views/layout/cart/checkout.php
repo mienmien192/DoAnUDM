@@ -295,7 +295,7 @@
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>Email<span>*</span></p>
-                                        <input type="email" value="<?php echo $data['user']['username']; ?>" id="emailCustom">
+                                        <input type="mail" value="<?php echo $data['user']['email']; ?>" id="emailCustom">
                                     </div>
                                 </div>
                             </div>
@@ -422,5 +422,6 @@
 </script>
 
 </body>
+
 
 </html>

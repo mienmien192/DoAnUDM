@@ -17,7 +17,7 @@
 				$user=[
 					'ho'=>$_POST['ho'],
 					'ten'=>$_POST['ten'],
-					'username'=>$_POST['username'],
+					'email'=>$_POST['username'],
 					'password'=>$_POST['password'],
 					'phone'=>$_POST['phone'],
 					'diachi'=>$_POST['diachi'],
