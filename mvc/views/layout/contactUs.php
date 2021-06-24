@@ -7,11 +7,12 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ogani | Template</title>
+    <title>Contact Us</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+    
     <!-- Css Styles -->
     <?php
     require_once('home/css.php');
@@ -48,17 +49,16 @@
                             <span>Tất cả sản phẩm</span>
                         </div>
                         <ul>
-                            <li><a href="#">Nước Hoa</a></li>
-                            <li><a href="#">Mỹ phẩm xách tay</a></li>
-                            <li><a href="#">Son</a></li>
-                            <li><a href="#">Toners</a></li>
-                            <li><a href="#">Phấn Má</a></li>
-                            <li><a href="#">Kẻ mắt</a></li>
-                            <li><a href="#">Kem nền</a></li>
-                            <li><a href="#">Mascara</a></li>
-                            <li><a href="#">Nước tẩy trang</a></li>
-                            <li><a href="#">Phấn mắt</a></li>
-                            <li><a href="#">Hoa tai</a></li>
+                                <li><a href="<?php echo URL.'Detail/1' ?>">Nước Hoa</a></li>
+                                <li><a href="<?php echo URL.'Detail/2' ?>">Mỹ phẩm xách tay</a></li>
+                                <li><a href="<?php echo URL.'Detail/3' ?>">Son</a></li>
+                                <li><a href="<?php echo URL.'Detail/4' ?>">Toners</a></li>
+                                <li><a href="<?php echo URL.'Detail/5' ?>">Phấn Má</a></li>
+                                <li><a href="<?php echo URL.'Detail/6' ?>">Kẻ mắt</a></li>
+                                <li><a href="<?php echo URL.'Detail/7' ?>">Kem nền</a></li>
+                                <li><a href="<?php echo URL.'Detail/8' ?>">Mascara</a></li>
+                                <li><a href="<?php echo URL.'Detail/9' ?>">Nước tẩy trang</a></li>
+                                <li><a href="<?php echo URL.'Detail/10' ?>">Phấn mắt</a></li>
                         </ul>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
     <!-- Hero Section End -->
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+    <section class="breadcrumb-section set-bg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -143,26 +143,29 @@
     <!-- Contact Section End -->
 
     <!-- Contact Form Begin -->
+    
     <div class="contact-form spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="contact__form__title">
+                    
                         <h2>Liên hệ chúng tôi</h2>
                     </div>
                 </div>
-            </div>
-            <form action="#">
+            </div><h4 class="sent-notification"></h4>
+            <form action="#" id="contactUs">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" placeholder="Your name">
+                        <input id="name" type="text" placeholder="Your name">
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" placeholder="Your Email">
+                        <input id="email" type="text" placeholder="Your Email">
                     </div>
                     <div class="col-lg-12 text-center">
-                        <textarea placeholder="Your message"></textarea>
-                        <button type="submit" class="site-btn">Gửi</button>
+                        <textarea id="body" placeholder="Your message"></textarea>
+                        <button type="button" onclick="sendEmail()" value="Send your contact" class="site-btn">Gửi</button>
+                        
                     </div>
                 </div>
             </form>
@@ -180,8 +183,54 @@
     <?php
     require_once('home/js.php');
     ?> 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script type="text/javascript">
+   function sendEmail()
+    {
+        var name = $("#name");
+        var email = $("#email");
+        var body = $("#body");
+
+        if(isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(body)){
+            $.ajax({
+                url: 'sendEmail.php',
+                method: 'POST',
+                dataType: 'json',
+                data: {
+                    name:name.val(),
+                    email:email.val(),
+                    body:body.val(),
+                }, success: function(response){
+                    $('#contactUs')[0].reset();
+                    $('.sent-notification').text("Message sent successfully.");
+                }
+            });
+        }
+    }
+    
+
+    function isNotEmpty(caller){
+        if(caller.val() == ""){
+            caller.css('border', '2px solid red');
+            return false;
+        }
+        else{
+            caller.css('border', '');
+            return true;
+        }
+    }
+</script>
 
 
 </body>
-
+ 
 </html>
+
+
+
+
+
+
+
+

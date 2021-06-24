@@ -79,7 +79,7 @@
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="hero__search__phone__text">
-                                <h5>+65 11.188.888</h5>
+                                <h5>+84 123 123 123</h5>
                                 <span>support 24/7 time</span>
                             </div>
                         </div>
@@ -183,96 +183,31 @@
                         </div>
                         <div class="row">
                             <div class="product__discount__slider owl-carousel">
+                            <?php 
+                                foreach ($data['product'] as $key => $value) {
+                                ?>
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg="<?php echo URL_LAYOUT;?>img/product/becca.jpg">
+                                            data-setbg="<?php echo URL_LAYOUT .'img/product/'.$value['img'];?>">
                                             <div class="product__discount__percent">-20%</div>
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="<?php echo URL.'layout/detail/'.$value['id']; ?>"><i class="fa fa-retweet"></i></a></li>
+                                                <li><a href="<?php echo URL.'cart1/store/'.$value['id'];?>" class="addCart"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
-                                            <span>Bảng màu mắt BECCA Après Ski Glow Face Palette</span>
-                                            <h5><a href="#">Hàn Quốc</a></h5>
-                                            <div class="product__item__price">380,000 VND <span>1,990,000 VND</span></div>
+                                            <span<a href="#"><?php echo $value['tensp']; ?></span>
+                                            <h5><a href="#"><?php echo $value['xuatxu']; ?></a></h5>
+                                            <div class="product__item__price"><?php echo number_format($value['gia']).'VND'; ?> <span>990,000 VND</span></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <div class="product__discount__item">
-                                        <div class="product__discount__item__pic set-bg"
-                                            data-setbg="<?php echo URL_LAYOUT;?>img/product/becca.jpg">
-                                            <div class="product__discount__percent">-20%</div>
-                                            <ul class="product__item__pic__hover">
-                                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="product__discount__item__text">
-                                            <span>Bảng màu mắt BECCA Après Ski Glow Face Palette</span>
-                                            <h5><a href="#">Hàn Quốc</a></h5>
-                                            <div class="product__item__price">380,000 VND <span>1,990,000 VND</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="product__discount__item">
-                                        <div class="product__discount__item__pic set-bg"
-                                            data-setbg="<?php echo URL_LAYOUT;?>img/product/becca.jpg">
-                                            <div class="product__discount__percent">-20%</div>
-                                            <ul class="product__item__pic__hover">
-                                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="product__discount__item__text">
-                                            <span>Bảng màu mắt BECCA Après Ski Glow Face Palette</span>
-                                            <h5><a href="#">Hàn Quốc</a></h5>
-                                            <div class="product__item__price">380,000 VND <span>1,990,000 VND</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="product__discount__item">
-                                        <div class="product__discount__item__pic set-bg"
-                                            data-setbg="<?php echo URL_LAYOUT;?>img/product/becca.jpg">
-                                            <div class="product__discount__percent">-20%</div>
-                                            <ul class="product__item__pic__hover">
-                                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="product__discount__item__text">
-                                            <span>Bảng màu mắt BECCA Après Ski Glow Face Palette</span>
-                                            <h5><a href="#">Hàn Quốc</a></h5>
-                                            <div class="product__item__price">380,000 VND <span>1,990,000 VND</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="product__discount__item">
-                                        <div class="product__discount__item__pic set-bg"
-                                            data-setbg="<?php echo URL_LAYOUT;?>img/product/becca.jpg">
-                                            <div class="product__discount__percent">-20%</div>
-                                            <ul class="product__item__pic__hover">
-                                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="product__discount__item__text">
-                                            <span>Bảng màu mắt BECCA Après Ski Glow Face Palette</span>
-                                            <h5><a href="#">Hàn Quốc</a></h5>
-                                            <div class="product__item__price">380,000 VND <span>1,990,000 VND</span></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
+                                <?php } ?>
+                                
+                                
                             </div>
                         </div>
                     </div>
@@ -287,17 +222,15 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-4">
-                                <div class="filter__found">
-                                    
-                                </div>
-                            </div>
+                            
                             <div class="col-lg-4 col-md-3">
                                
                             </div>
                         </div>
                     </div>
                     <div class="row">
+                    
+
                     <?php 
                     foreach ($data['product'] as $key => $value) {
                     ?>

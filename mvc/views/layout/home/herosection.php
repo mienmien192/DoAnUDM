@@ -8,17 +8,18 @@
                             <span>Tất cả sản phẩm</span>
                         </div>
                         <ul>
-                            <li><a href="#">Nước Hoa</a></li>
-                            <li><a href="#">Mỹ phẩm xách tay</a></li>
-                            <li><a href="#">Son</a></li>
-                            <li><a href="#">Toners</a></li>
-                            <li><a href="#">Phấn Má</a></li>
-                            <li><a href="#">Kẻ mắt</a></li>
-                            <li><a href="#">Kem nền</a></li>
-                            <li><a href="#">Mascara</a></li>
-                            <li><a href="#">Nước tẩy trang</a></li>
-                            <li><a href="#">Phấn mắt</a></li>
-                            <li><a href="#">Hoa tai</a></li>
+                       <li>
+                       <li><a href="<?php echo URL.'Detail/1' ?>">Nước Hoa</a></li>
+                                <li><a href="<?php echo URL.'Detail/2' ?>">Mỹ phẩm xách tay</a></li>
+                                <li><a href="<?php echo URL.'Detail/3' ?>">Son</a></li>
+                                <li><a href="<?php echo URL.'Detail/4' ?>">Toners</a></li>
+                                <li><a href="<?php echo URL.'Detail/5' ?>">Phấn Má</a></li>
+                                <li><a href="<?php echo URL.'Detail/6' ?>">Kẻ mắt</a></li>
+                                <li><a href="<?php echo URL.'Detail/7' ?>">Kem nền</a></li>
+                                <li><a href="<?php echo URL.'Detail/8' ?>">Mascara</a></li>
+                                <li><a href="<?php echo URL.'Detail/9' ?>">Nước tẩy trang</a></li>
+                                <li><a href="<?php echo URL.'Detail/10' ?>">Phấn mắt</a></li>
+                       </li>
                         </ul>
                     </div>
                 </div>

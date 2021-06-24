@@ -15,7 +15,11 @@
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
- 
+   <!-- Navbar -->
+   <?php
+    require_once('home/navbar.php');
+    ?>
+  <!-- /.navbar -->
     <?php
     require_once('home/sidebar.php');
     ?>
@@ -26,11 +30,7 @@
     <?php
     require_once('home/footer.php');
     ?>
-  <!-- Navbar -->
- <?php
-    require_once('home/navbar.php');
-    ?>
-  <!-- /.navbar -->
+
 
   <!-- Main Sidebar Container -->
 

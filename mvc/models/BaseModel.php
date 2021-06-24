@@ -79,5 +79,10 @@ class BaseModel extends Database
 		return mysqli_fetch_assoc($query);
 		
 	}
+	public function orderBy($table,$id, $data){
+		$sql="SELECT * FROM ${table} ORDER BY ${id} ASC LIMIT 3 OFFSET 0";
+		$query=$this->_query($sql);
+		return mysqli_fetch_assoc($query);
+	}
 }
 ?>

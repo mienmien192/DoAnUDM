@@ -32,6 +32,18 @@ class ProductModel extends BaseModel
 			return $data;
 				
 		}
+		public function getcategory($category){
+            $sql="SELECT * FROM sanpham WHERE category='${category}' ";
+            $query=$this->_query($sql);
+            $data=[];
+            while ($row = mysqli_fetch_assoc($query)) {
+                array_push($data, $row);
+            }
+            return $data;
+            
+        }
+
+		
 	}
 
  ?>

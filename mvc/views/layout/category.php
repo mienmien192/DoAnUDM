@@ -95,7 +95,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2 style="color: #000">Thông tin tìm kiếm</h2>
+                        <h2 style="color: #000">Sản phẩm nổi bật</h2>
                         
                     </div>
                 </div>
@@ -105,9 +105,10 @@
 <!-- thong tin tk -->
 <div class="row">
     <div class="col-lg-12">
-        <div class="row featured__filter">
+        <div class="row ">
             <?php 
-            foreach ($data as $key => $value) {
+            $stt=0;
+            foreach ($data['category'] as $key => $value) {
              ?>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="featured__item">
@@ -125,7 +126,10 @@
                         </div>
                     </div>
                 </div>
-            <?php } ?>
+                
+            <?php
+         $stt++;
+        } ?>
         </div>
     </div>
 </div>
