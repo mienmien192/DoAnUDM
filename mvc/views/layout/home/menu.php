@@ -15,22 +15,29 @@
                 <a href="#"><i class="fa fa-user"></i> Login</a>
             </div>
         </div>
-        <nav class="humberger__menu__nav mobile-menu">
-            <ul>
-                <li class="active"><a href="<?php echo URL?>">Home</a></li>
-                <li><a href="<?php echo URL.'layout/shop-grid'?>">Shop</a></li>
-                <li><a href="#">Pages</a>
-                    <ul class="header__menu__dropdown">
-                        <li><a href="./shop-details.html">Shop Details</a></li>
-                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                        <li><a href="./checkout.html">Check Out</a></li>
-                        <li><a href="./blog-details.html">Blog Details</a></li>
+        <nav class="header__menu">
+                    <ul>
+                        <li class="active"><a href="<?php echo URL?>">Home</a></li>
+                        <li><a href="<?php echo URL.'layout/shopgrid'?>">Shop</a></li>
+                        <li><a href="#">Category</a>
+                            <ul class="header__menu__dropdown">
+                                    
+                                <li><a href="<?php echo URL.'Detail/1' ?>">Nước Hoa</a></li>
+                                <li><a href="<?php echo URL.'Detail/2' ?>">Mỹ phẩm xách tay</a></li>
+                                <li><a href="<?php echo URL.'Detail/3' ?>">Son</a></li>
+                                <li><a href="<?php echo URL.'Detail/4' ?>">Toners</a></li>
+                                <li><a href="<?php echo URL.'Detail/5' ?>">Phấn Má</a></li>
+                                <li><a href="<?php echo URL.'Detail/6' ?>">Kẻ mắt</a></li>
+                                <li><a href="<?php echo URL.'Detail/7' ?>">Kem nền</a></li>
+                                <li><a href="<?php echo URL.'Detail/8' ?>">Mascara</a></li>
+                                <li><a href="<?php echo URL.'Detail/9' ?>">Nước tẩy trang</a></li>
+                                <li><a href="<?php echo URL.'Detail/10' ?>">Phấn mắt</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./blog.html">Beauty Tips</a></li>
+                        <li><a href="<?php echo URL.'layout/contactUs'?>">Contact</a></li>
                     </ul>
-                </li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
+                </nav>
         <div id="mobile-menu-wrap"></div>
         <div class="header__top__right__social">
             <a href="#"><i class="fa fa-facebook"></i></a>

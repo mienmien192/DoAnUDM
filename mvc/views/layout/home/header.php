@@ -5,7 +5,7 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="header__top__left">
                         <ul>
-                            <li><i class="fa fa-envelope"></i> adelacomestic@gmail.com</li>
+                            <li><i class="fa fa-envelope"></i> adelacosmetic.vlog@gmail.com</li>
                             <li>Miễn phí ship cho hóa đơn trên 300.000 VND</li>
                         </ul>
                     </div>

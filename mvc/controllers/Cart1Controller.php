@@ -12,7 +12,7 @@
 			$this->userModel=new UserModel;
 		}
 		function index(){
-			// unset($_SESSION['cart']);die();
+			//  unset($_SESSION['cart']);die();
 			if(isset($_SESSION['cart'])){
 				$data['cart']=$_SESSION['cart'];
 			}
