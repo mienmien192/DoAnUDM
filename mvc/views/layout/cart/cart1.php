@@ -244,7 +244,7 @@
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="hero__search__phone__text">
-                                <h5>+65 123 123 123</h5>
+                                <h5>+65 0123 456 789</h5>
                                 <span>support 24/7 time</span>
                             </div>
                         </div>
@@ -390,14 +390,14 @@
                         </div>
                         <ul>
                             <li>Address: 164 Nguyen Thi Minh Khai, 1st District, Ho Chi Minh City</li>
-                            <li>Phone: 123 123 123</li>
+                            <li>Phone: 0123 456 789</li>
                             <li>Email: adelacosmetic.vlog@gmail.com</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
                     <div class="footer__widget">
-                        <h6>Về Chúng tôi</h6>
+                        <h6>About Us</h6>
                         <p>Adela Cosmetic tự hào là một trong những chuỗi cửa hàng mỹ phẩm lớn và đáng tin cậy nhất tại Sài Gòn,
                          nơi có thể thỏa mãn niềm đam mê trong cuộc chơi phấn son của hàng triệu tín đồ yêu shopping từ Nam ra Bắc.
                           Được ưu ái với tên gọi “Thiên Đường Mỹ Phẩm Triệu Like”, Adela luôn được xem là mái nhà chung của hàng nghìn
