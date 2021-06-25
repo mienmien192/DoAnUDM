@@ -38,7 +38,7 @@
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="hero__search__phone__text">
-                                <h5>+84 123 123 123</h5>
+                                <h5>+84 123 456 789</h5>
                                 <span>support 24/7 time</span>
                             </div>
                         </div>
