@@ -4,7 +4,7 @@ require_once './mvc/Bridge.php';
 $x=new App();
 
 ?>
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,4 +15,4 @@ $x=new App();
 <body>
     hello moi nguoi em la chao day
 </body>
-</html>
+</html> -->
