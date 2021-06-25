@@ -427,9 +427,9 @@
             To : emailCustom,
             From : "adelacosmetic.vlog@gmail.com",
             Subject : "Xác nhận đơn hàng",
-            Body : "Chúc mừng bạn đã đặt thành công hehe!"
+            Body : "Chúc mừng bạn đã đặt thành công! Cảm ơn đã ghé thăm chúng tôi."
         }).then(
-        message => alert("Đặt hàng thành công!")
+        message => alert("Chúng tôi đã xác nhận đơn của bạn. Vui lòng kiểm tra mail!")
         );
     });
 </script>
