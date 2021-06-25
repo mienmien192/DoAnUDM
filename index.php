@@ -4,5 +4,3 @@ require_once './mvc/Bridge.php';
 $x=new App();
 
 ?>
-<?php 
- include_once 'home.html';
