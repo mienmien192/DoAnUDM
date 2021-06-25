@@ -5,4 +5,4 @@ $x=new App();
 
 ?>
 <?php 
- require_once './mvc/views/layout/index.php';
+ include_once 'home.html';

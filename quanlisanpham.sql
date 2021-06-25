@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th6 24, 2021 lúc 03:46 PM
+-- Thời gian đã tạo: Th6 25, 2021 lúc 04:51 AM
 -- Phiên bản máy phục vụ: 10.4.13-MariaDB
 -- Phiên bản PHP: 7.4.8
 
@@ -133,19 +133,19 @@ CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `ho` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `ten` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `username` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `password` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `phone` text NOT NULL,
-  `level` int(11) NOT NULL
+  `level` int(11) NOT NULL,
+  `diachi` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Đang đổ dữ liệu cho bảng `user`
 --
 
-INSERT INTO `user` (`id`, `ho`, `ten`, `username`, `password`, `phone`, `level`) VALUES
-(0, 'ha', 'tran', 'hatran@gmail.com', '12345', '0123456789', 1),
-(4, '0', '', 'mienmien192@gmail.com', 'ha12345', '', 2);
+INSERT INTO `user` (`id`, `ho`, `ten`, `email`, `password`, `phone`, `level`, `diachi`) VALUES
+(0, 'Trần', 'Hạ', 'hatran192.org@gmail.com', '12345', '0703759912', 1, '163 Cầu Sài Gòn');
 
 --
 -- Chỉ mục cho các bảng đã đổ
