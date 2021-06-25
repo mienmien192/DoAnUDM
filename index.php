@@ -3,5 +3,5 @@ session_start();
 require_once './mvc/Bridge.php';
 $x=new App();
 
-header("location:".URL."index");
+header('Location:views/index.php');
 ?>
