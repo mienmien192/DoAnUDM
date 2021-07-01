@@ -17,6 +17,7 @@
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-linkedin"></i></a>
                             <a href="<?php echo URL.'login/logout' ?>" ><i class="fa fa-sign-out"></i></a>
+                           
                         </div>
                        
                         <div class="header__top__right__auth" id="login1">

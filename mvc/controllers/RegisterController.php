@@ -29,6 +29,7 @@
 		$data=[];
 		$this->call_views('layout/login/register');
 		}
+		
 	}
 
  ?>

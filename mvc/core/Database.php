@@ -16,17 +16,5 @@
 			return false;
 		}
 		
-		public static function getBrandFromProduct(){
-			$connect = self::connect();
-			$sql = "SELECT DISTINCT(category) FROM sanpham WHERE product_status = 1 ORDER BY id DESC ";
-			$stmt = $connect->prepare($sql);
-			$stmt->execute();
-			$records = array();
-			// duyet toan bo phan tu trong ban sanpham
-			while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-				$records[] = $row;
-			}
-			return $records;
-		}
 	}
  ?>

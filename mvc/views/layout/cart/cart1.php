@@ -263,7 +263,7 @@
                     <div class="breadcrumb__text">
                         <h2 style="color: #000">Shopping Cart</h2>
                         <div class="breadcrumb__option">
-                            <a style="color: #000" href="./index.html">Home</a>
+                            <a style="color: #000" href="">Home</a>
                             <span style="color: #000">Shopping Cart</span>
                         </div>
                     </div>
@@ -326,9 +326,7 @@
                                         <a href="<?php echo URL.'cart1/delete/'.$value['id']; ?>" class="removeCart" data-id="<?php echo $value['id']; ?>">
                                         <span class="icon_close"></span></a>
                                     </td>
-                                    <td>
-                                        <a href="" class="addProduct" data-id="<?php echo $value['id']; ?>">Update</a>
-                                    </td>
+                                    
                                 </tr>
                                     <?php  }}  ?>
                             </tbody>
@@ -340,7 +338,7 @@
                 <div class="col-lg-12">
                     <div class="shoping__cart__btns">
                         <a href="<?php echo URL; ?>" class="primary-btn cart-btn">CONTINUE SHOPPING</a>
-                        <a href="http://localhost:8080/codePHP/DOANUDM/cart1/update/" class="primary-btn cart-btn cart-btn-right"><span class="icon_loading"></span>
+                        <a href="" class="primary-btn cart-btn cart-btn-right addProduct" data-id="<?php echo $value['id']; ?>"><span class="icon_loading"></span>
                             Update Cart</a>
                     </div>
                 </div>

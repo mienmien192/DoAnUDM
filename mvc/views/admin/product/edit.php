@@ -8,7 +8,7 @@
 		<form method="post" enctype="multipart/form-data">
 			<div class="card-body">
 				<div class="form-group">
-					<label for="inputName">TenSP</label>
+					<label for="inputName">Tên sản phẩm</label>
 					<input type="text" class="form-control" id="inputName" placeholder="tensp" name="tensp" value="<?php echo $data['product']['tensp']; ?>">
 				</div>
 				<div class="form-group">

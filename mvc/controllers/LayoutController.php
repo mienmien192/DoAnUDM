@@ -6,6 +6,7 @@
 	{
 		private $productModel;
 		private $CategoryModel;
+		private $UserModel;
 		function __construct()
 		{
 			$this->call_models('ProductModel');
@@ -13,6 +14,9 @@
 
 			$this->call_models('CategoryModel');
 			$this->CategoryModel=new CategoryModel;
+
+			$this->call_models('UserModel');
+			$this->UserModel=new UserModel;
 		}
 		function index(){	
 			$data['main']='home/listProduct';
@@ -33,6 +37,19 @@
 		function contactUs(){
 			$this->call_views('layout/contactUs');
 		}
+		function profile($id, $data){
+			if(isset($_POST['x'])){
+				
+				$user=[
+					'email'=>$_POST['username'],
+					'password'=>$_POST['password'],
+					'level'=>$_POST['level']
+				];
+			$data['user']=$this->userModel->getAll();
+			$this->call_views('layout/profile', $data);
+		}
+
+	}
 		
 	}
  ?>

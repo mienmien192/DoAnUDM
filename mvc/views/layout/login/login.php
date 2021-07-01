@@ -94,13 +94,7 @@
 
       
       <!-- /.social-auth-links -->
-        <?php 
-        if (isset($_GET["newpwd"])) {
-          if ($_GET["newpwd"] == "passwordupdated") {
-            echo '<p > Your password has been </p>';
-          }
-        }
-        ?>
+       
       <p class="mb-1">
         <a href="reset-password.php" style="color: #000"  >Quên mật khẩu? </a>
       </p>

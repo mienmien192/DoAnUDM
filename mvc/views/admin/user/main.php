@@ -14,7 +14,9 @@
                   	<th class="sorting_desc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column ascending" aria-sort="descending">Username</th>
 
                   	<th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending">Password</th>
-                  	<th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">Level</th>
+                  	<th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">Họ</th>
+                    <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">Tên</th>
+                    <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">Địa chỉ</th>
                   	<th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Edit</th>
                   	<th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Delete</th>
                   </tr>
@@ -23,12 +25,14 @@
                   	<?php 
                   		foreach ($data['user'] as $key => $value) {
                   		
-                  	
+                        
                   	 ?>
                   <tr role="row" class="odd">
                     <td class="sortg_1" tabindex="0"><?php echo $value['email']; ?></td>
                     <td><?php echo $value['password']; ?></td>
-                    <td><?php echo $value['level']; ?></td>
+                    <td><?php echo $value['ho']; ?></td>
+                    <td><?php echo $value['ten']; ?></td>
+                    <td><?php echo $value['diachi']; ?></td>  
                     <td><a href="<?php echo URL."user/edit/${value['id']}"; ?>">Edit</a></td>
                     <td><a href="<?php echo URL."user/delete/${value['id']}"; ?>">Delete</a></td>
                  

@@ -1,18 +1,18 @@
 <div class="content-wrapper">
 	<div class="card card-primary">
 		<div class="card-header">
-			<h3 class="card-title">Add Product</h3>
+			<h3 class="card-title">Thêm sản phẩm</h3>
 		</div>
 		<!-- /.card-header -->
 		<!-- form start -->
 		<form method="post" enctype="multipart/form-data">
 			<div class="card-body">
 				<div class="form-group">
-					<label for="inputName">TenSP</label>
+					<label for="inputName">Tên sản phẩm</label>
 					<input type="text" class="form-control" id="inputName" placeholder="tensp" name="tensp">
 				</div>
 				<div class="form-group">
-					<label for="inputName">img</label>
+					<label for="inputName">Hình ảnh</label>
 					<input type="file" name="img">
 				</div>
 				<div class="form-group">
@@ -31,7 +31,7 @@
 					<label for="inputName">Category</label>
 					<input type="text"  class="form-control"id="inputName" placeholder="Category" name="category">
 				</div>
-				<input type="submit" value="Insert Product" class="btn btn-success float-left px-5 py-3" name="addProduct">
+				<input type="submit" value="Thêm sản phẩm" class="btn btn-success float-left px-5 py-3" name="addProduct">
 				<!-- /.card-body -->
 
 			</form>

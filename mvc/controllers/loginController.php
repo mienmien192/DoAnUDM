@@ -37,5 +37,6 @@ class loginController extends Connect
 		unset($_SESSION['username']);
 		Header("Location:".URL);
 	}
+
 } 
 ?>
