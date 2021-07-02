@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <nav class="header__menu">
+                <nav class="header__menu" >
                     <ul>
                         <li class="active"><a href="<?php echo URL?>">Home</a></li>
                         <li><a href="<?php echo URL.'layout/shopgrid'?>">Shop</a></li>

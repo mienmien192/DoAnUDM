@@ -16,7 +16,7 @@
     			type:'GET',
     			data:{},
     			success:function(res){
-    				swal("Thêm thành công", "Vui lòng tới giỏ hàng kiểm tra!", "success");
+    				swal("Đã thêm vào giỏ hàng của bạn", "Vui lòng tới giỏ hàng kiểm tra!", "success");
                      $("#num_cart").load("http://localhost:8080/codePHP/DOANUDM/ #num_cart");
     			}
     		});
