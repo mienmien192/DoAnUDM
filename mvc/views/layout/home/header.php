@@ -65,7 +65,7 @@
                                 <li><a href="<?php echo URL.'Detail/10' ?>">Phấn mắt</a></li>
                             </ul>
                         </li>
-                        <li><a href="./blog.html">Beauty Tips</a></li>
+                        <li><a href="<?php echo URL.'layout/beautiTips'?>">Beauty Tips</a></li>
                         <li><a href="<?php echo URL.'layout/contactUs'?>">Contact</a></li>
                     </ul>
                 </nav>

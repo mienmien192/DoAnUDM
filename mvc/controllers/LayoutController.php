@@ -49,7 +49,9 @@
 			$this->call_views('layout/profile', $data);
 		}
 
-	}
-		
+		}
+		function beautiTips(){
+			$this->call_views('layout/beautiTips');
+		}
 	}
  ?>

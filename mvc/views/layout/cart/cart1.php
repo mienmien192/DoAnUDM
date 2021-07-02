@@ -357,7 +357,7 @@
                     <div class="shoping__checkout">
                         <h5>Cart Total</h5>
                         <ul>
-                        <li>Total <span id="total_Cart">
+                            <li>Total <span id="<?php echo "total_Cart".$value['id'] ?>">
                                 <?php 
                                 $tong=0;
                                 foreach ($data['cart'] as $value) {
@@ -365,7 +365,8 @@
                                  } 
                                  echo $tong;
                                  ?>
-                            </span></li>
+                            </span>
+                        </li>
                            
                         </ul>
                         <a href="<?php echo URL.'cart1/checkout'; ?>" class="primary-btn">TIẾN HÀNH KIỂM TRA</a>
@@ -444,26 +445,24 @@
 
 
 </body>
-    <script >
+    <script type="text/javascript">
         $('a.removeCart').click(function(event){
-                event.preventDefault();
-                var href=$(this).attr("href");
-                var id=$(this).attr("data-id");
-                var name="#product"+id;
-                $.ajax({
-                    url:href,
-                    type:'GET',
-                    data:{},
-                    success:function(){
-                        $(name).empty();
-                         $("#total_Cart").load("http:http://localhost:8080/codePHP/DOANUDM/cart1/index #total_Cart");
-                         $("#num_cart").load("http:http://localhost:8080/codePHP/DOANUDM/cart1/index #num_cart");
-                         
+            event.preventDefault();
+            var href=$(this).attr("href");
+            var id=$(this).attr("data-id");
+            var name="#product"+id;
 
-                    }   
-                });
+            $.ajax({
+                url:href,
+                type:'GET',
+                data:{},
+                success:function(){
+                    $(name).empy();
+                    $("#total_Cart").load("http:http://localhost:8080/codePHP/DOANUDM/cart1/index #total_Cart");
+                    $("num_cart").load("http:http://localhost:8080/codePHP/DOANUDM #num_cart");
+                }
             });
-
+        });
         $("span.qtybtn").click(function(){
             var id = $(this).siblings(".cho").attr("data-id");
             var inputName = '#input'+id;
